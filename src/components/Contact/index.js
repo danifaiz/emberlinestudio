@@ -18,52 +18,52 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                 <div class="ES-section about subpage">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h1 class="text-uppercase">GET IN TOUCH</h1>
-                                <p class="mb-0">xxxxx xx x xx x xx xxxx</p>
+                 <div className="ES-section about subpage">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <h1 className="text-uppercase">GET IN TOUCH</h1>
+                                <p className="mb-0">xxxxx xx x xx x xx xxxx</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="ES-section _contact pt-0">
-                    <div class="container">
-                        <div class="row">
+                <div className="ES-section _contact pt-0">
+                    <div className="container">
+                        <div className="row">
             
-                            <div class="col-12">
+                            <div className="col-12">
             
-                                <div class="form-group row m-0">
-                                    <label class="col-3 col-form-label">Name &amp; surname</label>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Who are you?"/>
+                                <div className="form-group row m-0">
+                                    <label className="col-3 col-form-label">Name &amp; surname</label>
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Who are you?"/>
                                     </div>
                                 </div>
             
-                                <div class="form-group row m-0">
-                                    <label class="col-3 col-form-label">Your Email</label>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Not a fake email"/>
+                                <div className="form-group row m-0">
+                                    <label className="col-3 col-form-label">Your Email</label>
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Not a fake email"/>
                                     </div>
                                 </div>
             
-                                <div class="form-group row m-0">
-                                    <label class="col-3 col-form-label">Telephone number</label>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Your number"/>
+                                <div className="form-group row m-0">
+                                    <label className="col-3 col-form-label">Telephone number</label>
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Your number"/>
                                     </div>
                                 </div>
             
-                                <div class="form-group row m-0">
-                                    <label class="col-3 col-form-label">Your message</label>
-                                    <div class="col">
-                                        <textarea class="form-control" name="text" rows="6" placeholder="Insert your request here" id=""></textarea>
+                                <div className="form-group row m-0">
+                                    <label className="col-3 col-form-label">Your message</label>
+                                    <div className="col">
+                                        <textarea className="form-control" name="text" rows="6" placeholder="Insert your request here" id=""></textarea>
                                     </div>
                                 </div>
-                                <div class="col-12 text-center pt-3">
-                                    <a class="button" href="#">Send</a>
+                                <div className="col-12 text-center pt-3">
+                                    <a className="button" href="#">Send</a>
                                 </div>
             
                             </div>
