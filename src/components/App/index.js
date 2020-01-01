@@ -14,7 +14,11 @@ import * as ROUTES from '../../constants/routes'
 import $ from 'jquery'
 
 
+
 class App extends Component {
+  state = {
+     projects: []
+  }
   static loadScripts() {
     var Headerfix = document.getElementById("action");
     var myScrollFunc = function() {
@@ -34,8 +38,10 @@ class App extends Component {
     });
 }
   componentWillMount() {
+    
   }
   componentDidMount() {
+   
     App.loadScripts();
     
 }
