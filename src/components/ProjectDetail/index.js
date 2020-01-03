@@ -9,16 +9,18 @@ export default class ProjectDetail extends Component {
         super(props);
         this.state = {
             project : {},
-            gallery: []
+            gallery: [],
+            tags:[]
         }
         
     }
     componentDidMount() {
         axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + this.props.match.params.projectId)
              .then(res => {
-                const project = res.data;
+                 console.log(res.data);
+                const project = res.data[0];
                 this.setState({ project: project});
-                this.setState({ tags : project.categories.map( category =>  category.name.toLowerCase()).join(",")}) 
+                this.setState({ tags : project.categories.map( category =>  category.name).join(",")}) 
                 this.setState({ gallery: project.gallery});
              })
              .catch(function (error) {
@@ -26,8 +28,10 @@ export default class ProjectDetail extends Component {
              });
     }
     render() {
+        console.log(this.state.gallery);
+        
         const images = this.state.gallery.map((item) =>
-            <div key={item.id} className="col-md-12 mb-30"><img src={item.image_name} alt="" /></div>
+            <div key={item.id} className={"col-md-" + item.grid +  " mb-30" }><img src={item.cloudurl} alt={item.image_name} /></div>
         );
        return (
             <div>
@@ -45,23 +49,14 @@ export default class ProjectDetail extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 mb-30">
-                            <p>The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together which did the magic and they were able to put a smile on every face they worked with.</p>
+                            <p>{this.state.project.description}</p>
                         </div>
-                        <div>
-                        {images}
-                        </div>
-                        
-
                         <div className="col-md-12 mb-30 mt-30">
                             <h1 className="text-uppercase mb-30">ADVENTURE STARTS HERE!</h1>
                             <p className="mb-30">The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together.</p>
                         </div>
-                        <div className="col-md-12 mb-30"><img src="/images/project-detail-003.jpg" alt="" /></div>
-                        <div className="col-md-6 mb-30"><img src="/images/project-detail-sm-004.jpg" alt="" /></div>
-                        <div className="col-md-6 mb-30"><img src="/images/project-detail-sm-005.jpg" alt="" /></div>
-                        <div className="col-md-6 mb-30"><img src="/images/project-detail-sm-006.jpg" alt="" /></div>
-                        <div className="col-md-6 mb-30"><img src="/images/project-detail-sm-007.jpg" alt="" /></div>
-                        <div className="col-md-12"><img src="/images/project-detail-004.jpg" alt="" /></div>
+                        {images}
+                        
                     </div>
                 </div>
             </div>

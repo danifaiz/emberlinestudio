@@ -106,7 +106,7 @@ export default class Projects extends Component {
                                                         <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.banner_image} alt={project.banner_image} /> </div>
+                                                        <img src={project.cloudurl} alt={project.banner_image} /> </div>
                                                     </div>
                                             </Link>
                                         </div>
