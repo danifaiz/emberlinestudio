@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import ESHeader from '../ESHeader'
 import OwlCarousel from 'react-owl-carousel';
-
+import axios from 'axios';
+import * as PATHS from '../../constants/data_routes'
 
 import Script from 'react-load-script'
+import { Link } from 'react-router-dom'
 export default class Home extends Component {
+    state = {
+        projects:[]
+    }
     constructor() {
         super()
        
@@ -14,7 +19,21 @@ export default class Home extends Component {
         
     }
     componentDidMount () {
-        
+        const cachedProjects = sessionStorage.getItem("projects");
+        if(cachedProjects) {
+            let projects = JSON.parse(cachedProjects)
+            this.setState({projects:projects});
+        } else {
+            axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECTS_URL}`)
+            .then(res => {
+               const projects = res.data;
+               this.setState({projects});
+               sessionStorage.setItem("projects", JSON.stringify(projects));
+            })
+            .catch(function (error) {
+               console.log(error);
+            });
+        }
     }
     componentWillUnmount() {
         
@@ -37,6 +56,8 @@ export default class Home extends Component {
                 items: 3
             }
         };
+        const projects = this.state.projects
+        console.log(projects);
         return (
             <div>
                 <ESHeader/>
@@ -146,6 +167,7 @@ export default class Home extends Component {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h1>FEATURED PROJECTS</h1>
+                                {projects.length && (
                                 <OwlCarousel 
                                     className="owl-theme"
                                     loop
@@ -157,78 +179,20 @@ export default class Home extends Component {
                                     smartSpeed="2000"
                                     responsive={responsiveOwl}
                                 >
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>Adventure World</h2>
-                                                    <span>Architecture, Amusement, Interior, Graphics</span> </div>
-                                                <img src="images/adventure-world.jpg" alt="" /> </a>
+                                    {projects.map( project => (
+                                        <div key={project.id} className="item">
+                                            <div className="projektDiv js-tilt">
+                                                <Link to={"project/" + project.id}>
+                                                    <div className="p-content">
+                                                        <h2>{project.title}</h2>
+                                                        <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
+                                                        <img src={project.cloudurl} alt={project.banner_image} /> </Link>
+                                            </div>
                                         </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>Doob Brand Activation</h2>
-                                                    <span>3D, Branding, Graphics</span> </div>
-                                                <img src="images/doob.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>Goody Kitchen</h2>
-                                                    <span>Kiosks, Graphics</span> </div>
-                                                <img src="images/goody-kitchen.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>NIC Lahore</h2>
-                                                    <span>Interior, Graphics</span> </div>
-                                                <img src="images/nic.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>Popas Candy Planet</h2>
-                                                    <span>Interior, Graphics</span> </div>
-                                                <img src="images/popas-planet.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>Prince Hair Saloon</h2>
-                                                    <span>Architecture, Interiors</span> </div>
-                                                <img src="images/prince.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-    
-                                    <div className="item">
-                                        <div className="projektDiv js-tilt">
-                                            <a href="#">
-                                                <div className="p-content">
-                                                    <h2>YOYO Land</h2>
-                                                    <span>Architecture, Amusement, Interior, Graphics</span> </div>
-                                                <img src="images/yoyoland.jpg" alt="" /> </a>
-                                        </div>
-                                    </div>
-
+                                    ))}
+                                    
                                 </OwlCarousel>
-    
+                                )}
                                 <a className="button" href="#">Learn More</a>
                             </div>
                         </div>
