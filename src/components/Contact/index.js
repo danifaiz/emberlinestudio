@@ -32,11 +32,11 @@ class Contact extends Component {
             data: bodyFormData,
             headers: {'Content-Type': 'multipart/form-data' }
             })
-            .then(function (response) {
-                this.setState({ ...INITIAL_STATE });
+            .then((response) => {
+                this.setState({ msg:response });
                 console.log(response);
             })
-            .catch(function (response) {
+            .catch((response)=> {
                 //handle error
                 this.setState({ error: response });
                 console.log(response);
