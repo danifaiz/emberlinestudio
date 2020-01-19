@@ -65,6 +65,7 @@ export default class Projects extends Component {
                console.log(error);
            });
         }
+        window.scrollTo(0, 0)
     }
     render() {
         const projects = this.state.projects

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar';
+import $ from 'jquery'
 export default class Header extends Component {
     state = {
         loadingBarProgress: 0
@@ -13,6 +14,16 @@ export default class Header extends Component {
       };
     componentDidMount () {
         this.complete()
+        Header.loadScripts();
+    }
+    static loadScripts() {
+        $('.switchMenu').click(function() {
+            $("#_menu").toggleClass('active');
+            $('#es_menu').toggleClass('open');
+            $("#_menu").toggleClass('menu-open').toggleClass('menu-close');
+            $('body').toggleClass('no-scroll')
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
     }
     render() {
         return (
@@ -97,11 +108,11 @@ export default class Header extends Component {
                             <div className="col-lg-6 col-md-6 col-sm-auto mw_bg">
                                 <nav className="es_menu-l">
                                     <ul>
-                                        <li><NavLink to="/home" className="inver">Home</NavLink></li>
-                                        <li><NavLink to="/projects" className="inver">Projects</NavLink></li>
-                                        <li><NavLink to="/services" className="inver">Services</NavLink></li>
-                                        <li><NavLink to="/about" className="inver">About Us</NavLink></li>
-                                        <li><NavLink to="/contact" className="inver">Contact Us</NavLink></li>
+                                        <li><NavLink to="/home" className="inver switchMenu">Home</NavLink></li>
+                                        <li><NavLink to="/projects" className="inver switchMenu">Projects</NavLink></li>
+                                        <li><NavLink to="/services" className="inver switchMenu">Services</NavLink></li>
+                                        <li><NavLink to="/about" className="inver switchMenu">About Us</NavLink></li>
+                                        <li><NavLink to="/contact" className="inver switchMenu">Contact Us</NavLink></li>
                                     </ul>
                                 </nav>
                             </div>

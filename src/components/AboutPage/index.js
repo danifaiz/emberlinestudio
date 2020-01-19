@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { NavLink }  from 'react-router-dom'
 class AboutPage extends Component {
     constructor() {
         super()
@@ -10,7 +10,7 @@ class AboutPage extends Component {
         
     }
     componentDidMount () {
-        
+        window.scrollTo(0, 0)  
     }
     componentWillUnmount() {
         
@@ -50,13 +50,16 @@ class AboutPage extends Component {
                                             <a className="nav-link" id="Kiosks-tab" data-toggle="pill" href="#Kiosks" role="tab" aria-controls="Kiosks" aria-selected="true">Kiosks</a>
                                             <a className="nav-link" id="Exhibition-tab" data-toggle="pill" href="#Exhibition" role="tab" aria-controls="Exhibition" aria-selected="true">Exhibition Stalls</a>
                                         </div>
-                                        <a className="button btn-explore" href="#">EXPLORE</a>
+                                        <NavLink className="button btn-explore" to="/projects">EXPLORE</NavLink>
                                     </div>
                                     <div className="col-md-9 col">
                                         <div className="tab-content" id="v-pills-tabContent">
                                             <div className="tab-pane fade show active" id="Amusement" role="tabpanel" aria-labelledby="Amusement-tab">
-                                                <img src="images/amusement_img.jpg" width="1140" height="790" alt="" /></div>
-                                            <div className="tab-pane fade" id="Architecture" role="tabpanel" aria-labelledby="Architecture-tab">Architecture</div>
+                                                <img src="images/amusement_img.jpg" width="1140" height="790" alt="" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Architecture" role="tabpanel" aria-labelledby="Architecture-tab">
+                                                Architecture
+                                            </div>
                                             <div className="tab-pane fade" id="Interior" role="tabpanel" aria-labelledby="Interior-tab">Interior</div>
                                             <div className="tab-pane fade" id="Graphics" role="tabpanel" aria-labelledby="Graphics-tab">Graphics</div>
                                             <div className="tab-pane fade" id="Branding" role="tabpanel" aria-labelledby="Branding-tab">Branding</div>

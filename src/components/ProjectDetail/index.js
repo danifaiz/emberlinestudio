@@ -26,6 +26,7 @@ export default class ProjectDetail extends Component {
              .catch(function (error) {
                 console.log(error);
              });
+             window.scrollTo(0, 0)
     }
     render() {
         console.log(this.state.gallery);

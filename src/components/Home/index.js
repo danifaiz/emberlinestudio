@@ -3,9 +3,10 @@ import ESHeader from '../ESHeader'
 import OwlCarousel from 'react-owl-carousel';
 import axios from 'axios';
 import * as PATHS from '../../constants/data_routes'
-
+import { NavLink }  from 'react-router-dom'
 import Script from 'react-load-script'
 import { Link } from 'react-router-dom'
+import Services from '../Services'
 export default class Home extends Component {
     state = {
         projects:[]
@@ -34,6 +35,7 @@ export default class Home extends Component {
                console.log(error);
             });
         }
+        window.scrollTo(0, 0)
     }
     componentWillUnmount() {
         
@@ -67,101 +69,12 @@ export default class Home extends Component {
                             <div className="col-12 text-center">
                                 <h1>ABOUT US</h1>
                                 <p>The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together which did the magic and they were able to put a smile on every face they worked with.</p>
-                                <a className="button" href="#">Learn More</a>
+                                <NavLink className="button" to="/about">Learn More</NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="ES-section P767">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 text-center">
-                                <h1>OUR SERVICES</h1>
-                                <div className="row">
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure> 
-                                                <img src="images/amusement.png" alt="" />
-                                                <h2>Amusement & Fun</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure>
-                                                <img src="images/architecture.png" alt="" />
-                                                <h2>Architecture & Interiors</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure>
-                                                <img src="images/ui.png" alt="" />
-                                                <h2>UI/UX</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure>
-                                                <img src="images/graphics.png" alt="" />
-                                                <h2>Graphics & Branding</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure>
-                                                <img src="images/kiosks.png" alt="" />
-                                                <h2>Kiosks & Exhibitions</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                        <a href="#">
-                                            <figure>
-                                                <img src="images/3danimation.png" alt="Amusement Design" />
-                                                <h2>3D & Animation</h2>
-                                                <div className="_button-arrow">
-                                                    <p>More Info</p>
-                                                    <span className="arrow"></span>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Services/>
                 <div className="ES-section _Projects">
                     <div className="container _pro-BG">
                         <div className="row">
@@ -193,7 +106,7 @@ export default class Home extends Component {
                                     
                                 </OwlCarousel>
                                 )}
-                                <a className="button" href="#">Learn More</a>
+                                <NavLink className="button" to="/about">Learn More</NavLink>
                             </div>
                         </div>
                     </div>

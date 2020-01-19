@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import { NavLink }  from 'react-router-dom'
 export default class Services extends Component {
-   
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div>
@@ -19,7 +22,7 @@ export default class Services extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="amusement-fun.html">
+                                <NavLink to="/service/amusement">
                                     <figure>
                                         <img src="images/amusement.png" alt=""/>
                                         <h2>Amusement & Fun</h2>
@@ -28,11 +31,11 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="architecture.html">
+                                <NavLink to="/service/architecture">
                                     <figure>
                                         <img src="images/architecture.png" alt=""/>
                                         <h2>Architecture & Interiors</h2>
@@ -41,11 +44,11 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="ui-ux.html">
+                                <NavLink to="/service/uiux">
                                     <figure>
                                         <img src="images/ui.png" alt=""/>
                                         <h2>UI/UX</h2>
@@ -54,11 +57,11 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="graphic.html">
+                                <NavLink to="/service/graphic">
                                     <figure>
                                         <img src="images/graphics.png" alt=""/>
                                         <h2>Branding & Graphics</h2>
@@ -67,11 +70,11 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="kiosks-exhibitions.html">
+                                <NavLink to="/service/kiosks">
                                     <figure>
                                         <img src="images/kiosks.png" alt=""/>
                                         <h2>Kiosks & Exhibitions</h2>
@@ -80,11 +83,11 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <a href="3d-animation.html">
+                                <NavLink to="/service/animation">
                                     <figure>
                                         <img src="images/3danimation.png" alt="Amusement Design" />
                                         <h2>3D & Animation</h2>
@@ -93,7 +96,7 @@ export default class Services extends Component {
                                             <span className="arrow"></span>
                                         </div>
                                     </figure>
-                                </a>
+                                </NavLink>
                             </div>
 
                         </div>
