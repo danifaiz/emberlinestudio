@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
 import { NavLink }  from 'react-router-dom'
+import Tilt from 'react-tilt'
+
 export default class Services extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
     render() {
+        let tiltOptions = {
+            max: 20,
+            perspective: 1000,
+            easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+            scale: 1, // 2 = 200%, 1.5 = 150%, etc..
+            speed: 250, // Speed of the enter/exit transition.
+            transition: true,
+        };
         return (
             <div>
                 <div className="ES-section about subpage">
@@ -21,7 +31,7 @@ export default class Services extends Component {
                 <div className="ES-section _Projects pt-0">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/amusement">
                                     <figure>
                                         <img src="images/amusement.png" alt=""/>
@@ -32,9 +42,9 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt >
 
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/architecture">
                                     <figure>
                                         <img src="images/architecture.png" alt=""/>
@@ -45,9 +55,9 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt>
 
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/uiux">
                                     <figure>
                                         <img src="images/ui.png" alt=""/>
@@ -58,9 +68,9 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt>
 
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/graphic">
                                     <figure>
                                         <img src="images/graphics.png" alt=""/>
@@ -71,9 +81,9 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt>
 
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/kiosks">
                                     <figure>
                                         <img src="images/kiosks.png" alt=""/>
@@ -84,9 +94,9 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt>
 
-                            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/animation">
                                     <figure>
                                         <img src="images/3danimation.png" alt="Amusement Design" />
@@ -97,7 +107,7 @@ export default class Services extends Component {
                                         </div>
                                     </figure>
                                 </NavLink>
-                            </div>
+                            </Tilt>
 
                         </div>
                     </div>

@@ -7,6 +7,7 @@ import { NavLink }  from 'react-router-dom'
 import Script from 'react-load-script'
 import { Link } from 'react-router-dom'
 import Services from '../Services'
+import Tilt from 'react-tilt'
 export default class Home extends Component {
     state = {
         projects:[]
@@ -58,6 +59,14 @@ export default class Home extends Component {
                 items: 3
             }
         };
+        let tiltOptions = {
+            max: 20,
+            perspective: 1000,
+            easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+            scale: 1, // 2 = 200%, 1.5 = 150%, etc..
+            speed: 250, // Speed of the enter/exit transition.
+            transition: true,
+        };
         const projects = this.state.projects
         console.log(projects);
         return (
@@ -94,13 +103,13 @@ export default class Home extends Component {
                                 >
                                     {projects.map( project => (
                                         <div key={project.id} className="item">
-                                            <div className="projektDiv js-tilt">
+                                            <Tilt options={tiltOptions} className="projektDiv js-tilt">
                                                 <Link to={"project/" + project.id}>
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
                                                         <img src={project.cloudurl} alt={project.banner_image} /> </Link>
-                                            </div>
+                                            </Tilt>
                                         </div>
                                     ))}
                                     

@@ -4,6 +4,7 @@ import Isotope from "isotope-layout/js/isotope";
 import axios from 'axios';
 import * as PATHS from '../../constants/data_routes'
 import { Link } from 'react-router-dom'
+import Tilt from 'react-tilt'
 export default class Projects extends Component {
     state = {
         projects:[],
@@ -70,6 +71,14 @@ export default class Projects extends Component {
     render() {
         const projects = this.state.projects
         console.log(projects);
+        let tiltOptions = {
+            max: 20,
+            perspective: 1000,
+            easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+            scale: 1, // 2 = 200%, 1.5 = 150%, etc..
+            speed: 250, // Speed of the enter/exit transition.
+            transition: true,
+        };
         
         const categories = this.state.categories
         return (
@@ -103,11 +112,12 @@ export default class Projects extends Component {
                                         <div key={project.id} className={"col-lg-4 col-md-6 col-sm-6 col-12 all " + project.categories.map( category =>  category.name.toLowerCase()).join(" ") }>
                                             <Link to={"project/" + project.id}>
                                                 <div className="project-thumb">
-                                                    <div className="projektDiv js-tilt">
-                                                        <div className="p-content">
-                                                        <h2>{project.title}</h2>
-                                                        <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.cloudurl} alt={project.banner_image} /> </div>
+                                                        <Tilt options={tiltOptions} className="projektDiv js-tilt">
+                                                            <div className="p-content">
+                                                            <h2>{project.title}</h2>
+                                                            <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
+                                                            <img src={project.cloudurl} alt={project.banner_image} /> 
+                                                        </Tilt>
                                                     </div>
                                             </Link>
                                         </div>
