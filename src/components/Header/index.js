@@ -91,10 +91,10 @@ export default class Header extends Component {
                                 </div>
 
                                 <div className="social-icon es_menu-social">
-                                    <a href="https://www.facebook.com/emberlinestudios"><i className="fa fa-facebook" title="Facebook"></i></a>
-                                    <a href="https://www.behance.net/emberlinestudios"><i className="fa fa-behance" title="Behance"></i></a>
-                                    <a href="https://www.linkedin.com/company/emberline-studios"><i className="fa fa-linkedin" title="Linkedin"></i></a>
-                                    <a href="https://www.instagram.com/emberline_studios"><i className="fa fa-instagram" title="Instagram"></i></a>
+                                    <a href="https://www.facebook.com/emberlinestudios" target="_blank"><i className="fa fa-facebook" title="Facebook"></i></a>
+                                    <a href="https://www.behance.net/emberlinestudios" target="_blank"><i className="fa fa-behance" title="Behance"></i></a>
+                                    <a href="https://www.linkedin.com/company/emberline-studios" target="_blank"><i className="fa fa-linkedin" title="Linkedin"></i></a>
+                                    <a href="https://www.instagram.com/emberline_studios" target="_blank"><i className="fa fa-instagram" title="Instagram"></i></a>
                                 </div>
 
                                 <div className="em-menu-bottom">

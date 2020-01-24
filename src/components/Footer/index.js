@@ -35,10 +35,10 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <div className="social-icon">
-                                    <a href="https://www.facebook.com/emberlinestudios"><i className="fa fa-facebook" title="Facebook"></i></a>
-                                    <a href="https://www.behance.net/emberlinestudios"><i className="fa fa-behance" title="Behance"></i></a>
-                                    <a href="https://www.linkedin.com/company/emberline-studios"><i className="fa fa-linkedin" title="Linkedin"></i></a>
-                                    <a href="https://www.instagram.com/emberline_studios"><i className="fa fa-instagram" title="Instagram"></i></a>
+                                    <a href="https://www.facebook.com/emberlinestudios" target="_blank"><i className="fa fa-facebook" title="Facebook"></i></a>
+                                    <a href="https://www.behance.net/emberlinestudios" target="_blank"><i className="fa fa-behance" title="Behance"></i></a>
+                                    <a href="https://www.linkedin.com/company/emberline-studios" target="_blank"><i className="fa fa-linkedin" title="Linkedin"></i></a>
+                                    <a href="https://www.instagram.com/emberline_studios" target="_blank"><i className="fa fa-instagram" title="Instagram"></i></a>
                                 </div>
                                 <p className="mb-0">Copyright © 2019 Emberline Studios® - a design agency</p>
                             </div>
