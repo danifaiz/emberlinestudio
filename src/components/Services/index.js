@@ -22,7 +22,7 @@ export default class Services extends Component {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h1 className="text-uppercase">Our Services</h1>
-                                <p className="mb-0">We provide our clients a full range of design services with a promise of excellence and ingenuity.</p>
+                                <p className="mb-0">We are a team, of multi-talented designers, with a passion for creativity and good design. We facilitate companies with our extensive range of design services including architecture & interiors, amusement park designs, retail kiosks & exhibitions, branding & graphics, UI/UX of digital products, 3D integrated designs and animations.</p>
                             </div>
                         </div>
                     </div>

@@ -58,7 +58,7 @@ function ContactUs() {
                     <div className="row">
                         <div className="col-12 text-center">
                             <h1 className="text-uppercase">lets work together</h1>
-                            <p>Exciting and challenging projects are driving us, but also a lively exchange of experience and interests is close to our hearts. If you are looking for an agency with which you want to grow together, then we are the right partner.</p>
+                            <p>Not sure where to start? We are here for you. Let’s team up to create positive impact in your business starting with your free consultation.</p>
                             <NavLink className="button" to="/contact">CONTACT US</NavLink>
                         </div>
                     </div>
