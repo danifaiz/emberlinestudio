@@ -53,9 +53,6 @@ export default class ProjectDetail extends Component {
                             <p>{this.state.project.description}</p>
                         </div>
                         <div className="col-md-12 mb-30 mt-30">
-                            <h1 className="text-uppercase mb-30">ADVENTURE STARTS HERE!</h1>
-                            <p className="mb-30">The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together.</p>
-                        </div>
                         {images}
                         
                     </div>
