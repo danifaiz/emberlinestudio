@@ -52,9 +52,7 @@ export default class ProjectDetail extends Component {
                         <div className="col-12 mb-30">
                             <p>{this.state.project.description}</p>
                         </div>
-                        <div className="col-md-12 mb-30 mt-30">
                         {images}
-                        
                     </div>
                 </div>
             </div>
