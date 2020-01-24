@@ -48,7 +48,7 @@ export default class Header extends Component {
                                     </svg>
                                 </a>
                             </div>
-                            <div className="TopPhone">+92 (333)462 53 11</div>
+                            <div className="TopPhone">+92 (333) 477 89 77</div>
 
                             <nav className="navbar navbar-expand-md">
                                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -99,7 +99,7 @@ export default class Header extends Component {
 
                                 <div className="em-menu-bottom">
                                     <h1>YOUR<br />SKYWARD<br />COMPANION</h1>
-                                    <p className="mb-0">+92 333 462 53 11</p>
+                                    <p className="mb-0">+92 333 477 89 77</p>
                                     <a href="mailto:hello@emberlinestudios.com">hello@emberlinestudios.com</a>
                                 </div>
 
