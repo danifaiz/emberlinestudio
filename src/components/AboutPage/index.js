@@ -55,18 +55,32 @@ class AboutPage extends Component {
                                     <div className="col-md-9 col">
                                         <div className="tab-content" id="v-pills-tabContent">
                                             <div className="tab-pane fade show active" id="Amusement" role="tabpanel" aria-labelledby="Amusement-tab">
-                                                <img src="images/amusement_img.jpg" width="1140" height="790" alt="" />
+                                                <img src="images/amusement_img.jpg" width="1140" height="790" alt="amusement" />
                                             </div>
                                             <div className="tab-pane fade" id="Architecture" role="tabpanel" aria-labelledby="Architecture-tab">
-                                                Architecture
+                                                <img src="images/Architecture-ab.jpg" width="1140" height="790" alt="Architecture" />
                                             </div>
-                                            <div className="tab-pane fade" id="Interior" role="tabpanel" aria-labelledby="Interior-tab">Interior</div>
-                                            <div className="tab-pane fade" id="Graphics" role="tabpanel" aria-labelledby="Graphics-tab">Graphics</div>
-                                            <div className="tab-pane fade" id="Branding" role="tabpanel" aria-labelledby="Branding-tab">Branding</div>
-                                            <div className="tab-pane fade" id="UIUX" role="tabpanel" aria-labelledby="UIUX-tab">UIUX</div>
-                                            <div className="tab-pane fade" id="Animation" role="tabpanel" aria-labelledby="Animation-tab">3D Animation</div>
-                                            <div className="tab-pane fade" id="Kiosks" role="tabpanel" aria-labelledby="Kiosks-tab">Kiosks</div>
-                                            <div className="tab-pane fade" id="Exhibition" role="tabpanel" aria-labelledby="Exhibition-tab">Exhibition</div>
+                                            <div className="tab-pane fade" id="Interior" role="tabpanel" aria-labelledby="Interior-tab">
+                                                <img src="images/Interior-ab.jpg" width="1140" height="790" alt="Interior" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Graphics" role="tabpanel" aria-labelledby="Graphics-tab">
+                                                <img src="images/Graphics-ab.png" width="1140" height="790" alt="Graphics" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Branding" role="tabpanel" aria-labelledby="Branding-tab">
+                                                <img src="images/Branding-ab.jpg" width="1140" height="790" alt="Branding" />
+                                            </div>
+                                            <div className="tab-pane fade" id="UIUX" role="tabpanel" aria-labelledby="UIUX-tab">
+                                                <img src="images/UI-UX-ab.jpg" width="1140" height="790" alt="UI-UX" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Animation" role="tabpanel" aria-labelledby="Animation-tab">
+                                                <img src="images/3D-Animation-ab.jpg" width="1140" height="790" alt="3D-Animation" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Kiosks" role="tabpanel" aria-labelledby="Kiosks-tab">
+                                                <img src="images/Kiosk-ab.jpg" width="1140" height="790" alt="Kiosk" />
+                                            </div>
+                                            <div className="tab-pane fade" id="Exhibition" role="tabpanel" aria-labelledby="Exhibition-tab">
+                                                <img src="images/Exhibition-Stall-ab.jpg" width="1140" height="790" alt="Exhibition Stall" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
