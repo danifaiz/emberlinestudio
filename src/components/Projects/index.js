@@ -43,7 +43,13 @@ export default class Projects extends Component {
             axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECTS_URL}`)
             .then(res => {
                const projects = res.data;
+               const projectIdMap = {};
+               projects.forEach(function (project) {
+                    var title = project.title.replace(/ /g,"-").toLowerCase();
+                    projectIdMap[title] = project.id;
+               });
                this.setState({projects});
+               sessionStorage.setItem("projectIdMap", JSON.stringify(projectIdMap));
                sessionStorage.setItem("projects", JSON.stringify(projects));
             })
             .catch(function (error) {
@@ -110,7 +116,7 @@ export default class Projects extends Component {
                                     <div className="row grid">
                             {projects.map( project => (
                                         <div key={project.id} className={"col-lg-4 col-md-6 col-sm-6 col-12 all " + project.categories.map( category =>  category.name.toLowerCase()).join(" ") }>
-                                            <Link to={"project/" + project.id}>
+                                            <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()}>
                                                 <div className="project-thumb">
                                                         <Tilt options={tiltOptions} className="projektDiv js-tilt">
                                                             <div className="p-content">

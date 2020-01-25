@@ -29,7 +29,13 @@ export default class Home extends Component {
             axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECTS_URL}`)
             .then(res => {
                const projects = res.data;
+               const projectIdMap = {};
+               projects.forEach(function (project) {
+                    var title = project.title.replace(/ /g,"-").toLowerCase();
+                    projectIdMap[title] = project.id;
+               });
                this.setState({projects});
+               sessionStorage.setItem("projectIdMap", JSON.stringify(projectIdMap));
                sessionStorage.setItem("projects", JSON.stringify(projects));
             })
             .catch(function (error) {
@@ -104,7 +110,7 @@ export default class Home extends Component {
                                     {projects.map( project => (
                                         <div key={project.id} className="item">
                                             <Tilt options={tiltOptions} className="projektDiv js-tilt">
-                                                <Link to={"project/" + project.id}>
+                                                <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()}>
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
