@@ -53,7 +53,7 @@ export default class Header extends Component {
                             <nav className="navbar navbar-expand-md">
                                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item"><NavLink className="nav-link" to="/home">HOME <span className="sr-only">(current)</span></NavLink></li>
+                                        <li className="nav-item"><NavLink className="nav-link" to="/">HOME <span className="sr-only">(current)</span></NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/projects">PROJECTS</NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/services">SERVICES</NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/about">ABOUT US</NavLink></li>

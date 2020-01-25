@@ -347,10 +347,12 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	transition: all 0.4s ease; text-align: center
 }
 ._service figure img {
-	width: 260px;
+	width: 100%;
+	display: block;
 	height: auto;
 	margin-top: -200px;
 	transform: translateZ(20px);
+	padding: 10px 20px;
 	z-index: 1;
 	filter: drop-shadow(0 20px 15px rgba(136,142,160,.4));
 	-webkit-transition: all 0.1s linear;
@@ -1370,7 +1372,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	margin-bottom: 25px
 }
 ._service h2 {
-	font-size: 16px
+	font-size: 18px
 }
 .button, ._pro-BG .button {
 	padding: 9px 30px 8px;
@@ -1528,6 +1530,10 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center
+}
+._service figure img {
+	width: 100%;
+	padding: 15px 30px;
 }
 .footer ._FLogo {
 	margin: auto;
@@ -1736,9 +1742,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 ._pro-BG::after {
 	height: 568px
 }
-._service figure img {
-	width: 160px
-}
+
 .topheader {
 	padding: 0;
 	padding-top: 15px

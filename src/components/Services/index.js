@@ -17,7 +17,7 @@ export default class Services extends Component {
         };
         return (
             <div>
-                <div className="ES-section about subpage">
+                <div className="ES-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">
@@ -33,13 +33,15 @@ export default class Services extends Component {
                         <div className="row">
                             <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/amusement">
-                                    <figure>
+                                    <figure> 
                                         <img src="images/amusement.png" alt=""/>
+                                        <figcaption>    
                                         <h2>Amusement & Fun</h2>
                                         <div className="_button-arrow">
                                             <p>More Info</p>
                                             <span className="arrow"></span>
                                         </div>
+                                    </figcaption>
                                     </figure>
                                 </NavLink>
                             </Tilt >

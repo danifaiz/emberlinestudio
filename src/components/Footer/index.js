@@ -18,11 +18,11 @@ class Footer extends Component {
                 <div className="footer">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4">
-                                <img className="_FLogo" src="images/emberline-studios.svg" alt="" /> </div>
+                            <NavLink className="col-md-4" to="/">
+                                <img className="_FLogo" src="images/emberline-studios.svg" alt="" /> </NavLink>
                             <div className="col-md-4 text-center">
                                 <span className="_ph">+92 333 462 53 11</span>
-                                <a className="_email" href="emailto:hello@emberlinestudios.com">hello@emberlinestudios.com</a>
+                                <a className="_email" href="mailto:hello@emberlinestudios.com">hello@emberlinestudios.com</a>
                             </div>
                             <div className="col-md-4">
                                 <h3>YOUR SKYWARD<br />COMPANION</h3>
