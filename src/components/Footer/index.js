@@ -21,7 +21,7 @@ class Footer extends Component {
                             <NavLink className="col-md-4" to="/">
                                 <img className="_FLogo" src="images/emberline-studios.svg" alt="" /> </NavLink>
                             <div className="col-md-4 text-center">
-                                <span className="_ph">+92 333 462 53 11</span>
+                                <span className="_ph">+92 333 477 89 77</span>
                                 <a className="_email" href="mailto:hello@emberlinestudios.com">hello@emberlinestudios.com</a>
                             </div>
                             <div className="col-md-4">

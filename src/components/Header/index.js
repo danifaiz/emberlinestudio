@@ -53,7 +53,7 @@ export default class Header extends Component {
                             <nav className="navbar navbar-expand-md">
                                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item"><NavLink className="nav-link" to="/">HOME <span className="sr-only">(current)</span></NavLink></li>
+                                        <li className="nav-item"><NavLink exact activeClassName="active" className="nav-link" to="/">HOME <span className="sr-only">(current)</span></NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/projects">PROJECTS</NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/services">SERVICES</NavLink></li>
                                         <li className="nav-item"><NavLink className="nav-link" to="/about">ABOUT US</NavLink></li>
@@ -80,7 +80,7 @@ export default class Header extends Component {
 
                             <div className="col-lg-6 col-md-6 w-mob">
                                 <div className="EmberlineStudios-m">
-                                    <NavLink to="/home">
+                                    <NavLink to="/">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 263.21 205" style={{enableBackground:'new 0 0 263.21 205'}}>
                                             <g id="ESlogo">
                                                 <g>
@@ -97,7 +97,7 @@ export default class Header extends Component {
                                     <a href="https://www.instagram.com/emberline_studios" target="_blank"><i className="fa fa-instagram" title="Instagram"></i></a>
                                 </div>
 
-                                <div className="em-menu-bottom">
+                                <div className="em-menu-bottom" >
                                     <h1>YOUR<br />SKYWARD<br />COMPANION</h1>
                                     <p className="mb-0">+92 333 477 89 77</p>
                                     <a href="mailto:hello@emberlinestudios.com">hello@emberlinestudios.com</a>
@@ -108,7 +108,7 @@ export default class Header extends Component {
                             <div className="col-lg-6 col-md-6 col-sm-auto mw_bg">
                                 <nav className="es_menu-l">
                                     <ul>
-                                        <li><NavLink to="/home" className="inver switchMenu">Home</NavLink></li>
+                                        <li><NavLink to="/" className="inver switchMenu">Home</NavLink></li>
                                         <li><NavLink to="/projects" className="inver switchMenu">Projects</NavLink></li>
                                         <li><NavLink to="/services" className="inver switchMenu">Services</NavLink></li>
                                         <li><NavLink to="/about" className="inver switchMenu">About Us</NavLink></li>

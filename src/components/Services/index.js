@@ -17,7 +17,7 @@ export default class Services extends Component {
         };
         return (
             <div>
-                <div className="ES-section">
+                <div className="ES-section subpage">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">

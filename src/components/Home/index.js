@@ -15,10 +15,8 @@ export default class Home extends Component {
     constructor() {
         super()
        
-    }
-    
+    }     
     componentDidLoad() {
-        
     }
     componentDidMount () {
         const cachedProjects = sessionStorage.getItem("projects");
@@ -78,11 +76,11 @@ export default class Home extends Component {
         return (
             <div>
                 <ESHeader/>
-                <div className="ES-section about">
+                <div className="abouthome">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 text-center">
-                                <h1>ABOUT US</h1>
+                            <div className="col-12 text-center">       
+                                <h1>ABOUT US</h1> 
                                 <p>The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together which did the magic and they were able to put a smile on every face they worked with.</p>
                                 <NavLink className="button" to="/about">Learn More</NavLink>
                             </div>
@@ -109,19 +107,21 @@ export default class Home extends Component {
                                 >
                                     {projects.map( project => (
                                         <div key={project.id} className="item">
+                                            <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()} >
                                             <Tilt options={tiltOptions} className="projektDiv js-tilt">
-                                                <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()}>
+                                                
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.cloudurl} alt={project.banner_image} /> </Link>
+                                                        <img src={project.cloudurl} alt={project.banner_image} /> 
                                             </Tilt>
+                                            </Link>
                                         </div>
                                     ))}
                                     
                                 </OwlCarousel>
                                 )}
-                                <NavLink className="button" to="/about">Learn More</NavLink>
+                                <NavLink className="button" to="/projects">Learn More</NavLink>
                             </div>
                         </div>
                     </div>

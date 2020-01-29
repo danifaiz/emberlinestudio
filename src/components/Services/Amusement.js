@@ -38,7 +38,7 @@ export default class Amusement extends Component {
 
                             <div class="col-lg-6 col-md-12">
                                 <div class="conBox shadow R800bg">
-                                    <h2 class="text-uppercase">Trade Show Exhibitions</h2>
+                                    
                                     <p class="mb-20">Theme parks are great opportunity for strong consumer brands to extend into theme park environments, as focal point for commercial and resort development. Theme parks are always evolving, tapping into history, culture, mythology, technology and many other contemporary themes in order to deepen and broaden the park’s appeal.</p>
                                     <p>- Laser Tag</p>
                                     <p>- Trampoline</p>

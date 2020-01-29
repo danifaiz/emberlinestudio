@@ -23,7 +23,7 @@ class AboutPage extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <h1 className="text-uppercase">WHO WE ARE</h1>
-                                <p className="mb-0">We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations. Our devotion is rewarded by our portfolio that is versatile and expanding fast. </p>
+                                <p className="mb-0">The chronicle of Emberline Studio is a story of three designers who loved their work and wanted to be problem solvers. After working individually for years, they decided to share a platform in the design industry. We are an independent design firm owned by a triangle of multi-talented design graduates working for over a year now. Based out of Lahore, Pakistan – we have delivered both local and international projects successfully.</p>
                             </div>
                         </div>
                     </div>
@@ -109,22 +109,23 @@ class AboutPage extends Component {
                                     <div className="col-12 tab-content" id="pills-tabContent">
                                         <div className="tab-pane fade show active" id="Moodboard" role="tabpanel" aria-labelledby="Moodboard-tab">
                                             <h3>Moodboard</h3>
-                                            <p> We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations.</p>
+                                            <p> We compile our vision into a brief presentation and help you visualize the art direction we would take for your project. </p>
                                         </div>
                                         <div className="tab-pane fade" id="Brainstorm" role="tabpanel" aria-labelledby="Brainstorm-tab">
                                             <h3>Brainstorm</h3>
-                                            <p> We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations.</p>
+                                            <p> Once we establish our art direction, we sketch and iterate new ideas and shape them according to the project needs.</p>
                                         </div>
                                         <div className="tab-pane fade" id="Design01" role="tabpanel" aria-labelledby="Design01-tab">
                                             <h3>Design</h3>
-                                            <p> We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations.</p>
+                                            <p> Actual hardwork begins at this stage, we spend tons of time on this phase. We shape ideas into reality; visualize, iterate, and create drawing set for execution and easy implementation.</p>
                                         </div>
                                         <div className="tab-pane fade" id="Execution" role="tabpanel" aria-labelledby="Execution-tab">
                                             <h3>Execution</h3>
-                                            <p> We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations.</p>
+                                            <p> Our team is trained to provide precision in the execution of the project that is on budget and in time.</p>
                                         </div>
                                         <div className="tab-pane fade" id="Support" role="tabpanel" aria-labelledby="Support-tab">
                                             <h3>Support</h3>
+                                            <p>Our team is always active and will answer your call for support on projects we deliver. We keep record of our projects so you don't have to worry about it.</p>
                                         </div>
                                     </div>
 
@@ -159,24 +160,24 @@ class AboutPage extends Component {
                             </div>
                             <div className="col-md-6">
                                 <div className="OV-cont">
-                                    <h3>Skyward Companion</h3>
-                                    <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                    <h3>Your Skyward Companion</h3>
+                                    <p>We take great pride in calling ourselves your skyward companion because this feat demands ceaseless resolution, character and awe-inspiring creativity.</p>
                                 </div>
                                 <div className="OV-cont">
-                                    <h3>Skyward Companion</h3>
-                                    <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                    <h3>Part of your circle</h3>
+                                    <p>Being connected with our clients is what fuels us and helps us grow. This healthy relationship, more often than not, results in an increment of ideas and opportunities.</p>
                                 </div>
                                 <div className="OV-cont">
-                                    <h3>Skyward Companion</h3>
-                                    <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                    <h3>Facta Non Verba</h3>
+                                    <p>“Actions, not words” – is our battle-cry. Each person at Emberline Studios wants his work speak for himself. Each one of us is a strong believer of “Walk the talk”.</p>
                                 </div>
                                 <div className="OV-cont">
-                                    <h3>Skyward Companion</h3>
-                                    <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                    <h3>Go Getters</h3>
+                                    <p>We love to talk to new people and ask them how we could help them grow their businesses. Our team is passionate about solving problems and helping out people.</p>
                                 </div>
                                 <div className="OV-cont">
-                                    <h3>Skyward Companion</h3>
-                                    <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                    <h3>Intricacy Involved</h3>
+                                    <p>We know that small things in life matter and we put hard work into them. These efforts strengthen design and enhance the overall quality.</p>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +207,7 @@ class AboutPage extends Component {
                                 <div className="row happyCL">
                                     <div className="col-auto pr-0"><img src="images/adventure-color.png" width="240" height="150" alt="" /></div>
                                     <div className="col">
-                                        <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                        <p>This team did an amazing job with the design of Adventure Planet. I am happy with the decision of hiring the best professional team for interior design of one of the largest indoor playland. Results are splendid, kids love coming to Adventure Planet. Will definitely use them again for their services.</p>
                                         <p><strong>Adil Butt, Chief Executive Office, at Adventure Planet</strong></p>
                                     </div>
                                 </div>

@@ -31,7 +31,12 @@ export default class ProjectDetail extends Component {
     }
     render() {
         const images = this.state.gallery.map((item) =>
-            <div key={item.id} className={"col-md-" + item.grid +  " mb-30" }><img src={item.cloudurl} alt={item.image_name} /></div>
+                <div key={item.id} className={"col-md-" + item.grid + " mb-30"}>
+                      <div class="reveal-holder" data-aos="reveal-item">
+          <div class="reveal-block right" data-aos="reveal-right"></div> 
+                    <img src={item.cloudurl} alt={item.image_name} />
+                    </div>
+                    </div>
         );
        return (
             <div>
