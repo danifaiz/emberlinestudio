@@ -15,7 +15,7 @@ export default class ProjectDetail extends Component {
         
     }
     componentDidMount() {
-        const projectIdMap = JSON.parse(sessionStorage.getItem("projectIdMap"));
+        const projectIdMap = JSON.parse(localStorage.getItem("projectIdMap"));
         axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + projectIdMap[this.props.match.params.projectTitle])
              .then(res => {
                  console.log(res.data);
@@ -30,11 +30,11 @@ export default class ProjectDetail extends Component {
              window.scrollTo(0, 0)
     }
     render() {
-        const images = this.state.gallery.map((item) =>
+        const images = this.state.gallery.map((item,key) =>
                 <div key={item.id} className={"col-md-" + item.grid + " mb-30"}>
                       <div class="reveal-holder" data-aos="reveal-item">
           <div class="reveal-block right" data-aos="reveal-right"></div> 
-                    <img src={item.cloudurl} alt={item.image_name} />
+                    <img src={item.cloudurl} alt={this.state.project.title + "-" + key} />
                     </div>
                     </div>
         );

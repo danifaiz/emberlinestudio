@@ -33,7 +33,7 @@ export default class Home extends Component {
                     projectIdMap[title] = project.id;
                });
                this.setState({projects});
-               sessionStorage.setItem("projectIdMap", JSON.stringify(projectIdMap));
+               localStorage.setItem("projectIdMap", JSON.stringify(projectIdMap));
                sessionStorage.setItem("projects", JSON.stringify(projects));
             })
             .catch(function (error) {
@@ -113,7 +113,7 @@ export default class Home extends Component {
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.cloudurl} alt={project.banner_image} /> 
+                                                        <img src={project.cloudurl} alt={project.title} /> 
                                             </Tilt>
                                             </Link>
                                         </div>
@@ -121,7 +121,7 @@ export default class Home extends Component {
                                     
                                 </OwlCarousel>
                                 )}
-                                <NavLink className="button" to="/projects">Learn More</NavLink>
+                                <NavLink className="button" to="/projects">All Projects</NavLink>
                             </div>
                         </div>
                     </div>
