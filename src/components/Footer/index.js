@@ -40,7 +40,7 @@ class Footer extends Component {
                                     <a href="https://www.linkedin.com/company/emberline-studios" target="_blank"><i className="fa fa-linkedin" title="Linkedin"></i></a>
                                     <a href="https://www.instagram.com/emberline_studios" target="_blank"><i className="fa fa-instagram" title="Instagram"></i></a>
                                 </div>
-                                <p className="mb-0">Copyright © 2019 Emberline Studios® - a design agency</p>
+                                <p className="mb-0">Copyright © 2020 Emberline Studios® - A Design Agency</p>
                             </div>
                         </div>
                     </div>

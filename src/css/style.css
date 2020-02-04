@@ -616,7 +616,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 }
 ._Projects .owl-nav .owl-next:HOVER, ._Projects .owl-nav .owl-next:focus, ._Projects .owl-nav .owl-prev:HOVER, ._Projects .owl-nav .owl-prev:focus {
 	background-color: transparent!important;
-	outline: 0!important
+	outline: 0 !important
 }
 ._Projects .owl-dots {
 	padding-top: 15px

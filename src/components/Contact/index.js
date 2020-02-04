@@ -93,7 +93,7 @@ class Contact extends Component {
                             <div className="col-12">
             
                                 <div className="form-group row m-0">
-                                    <label className="col-3 col-form-label">Name &amp; surname</label>
+                                    <label className="col-3 col-form-label">Name</label>
                                     <div className="col">
                                         <input
                                             className="form-control"
