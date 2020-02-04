@@ -178,11 +178,14 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	height: 100%;
 	min-height: 100vh;
 	position: relative;
-	background-color: #fafafa
+	background-color: #fafafa;
+	background-image: url(/public/images/EmberlineStudios-HeroImage_2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #ES-header .ES-header-wrap {
 	position: absolute;
-	top: 50%;
+	top: 32%;
 	left: 0;
 	transform: translate(0, -50%);
 	-webkit-box-align: center;
@@ -193,15 +196,15 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	width: 100%;
 }
 #ES-header .ES-header-wrap h1 {
-	font-size: 65px;
-	color: #272827;
-	text-align: left;
+	font-size: 36px;
+	color: #ef3738;
+	text-align: center;
 	margin: 0
 }
 #ES-header .ES-header-wrap p {
 	font-size: 18px;
-	text-align: left;
-	margin: 25px 0 0 0
+	text-align: center;
+	margin: 20px 0 0 0
 }
 .social-icon {
 	position: absolute;
@@ -223,7 +226,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	text-align: center;
 	margin-bottom: 20px;
 	display: block;
-	color: #c7c7c7;
+	color: #282828;
 	transition: all .3s ease-out;
 }
 .social-icon a:HOVER {
@@ -231,7 +234,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	text-decoration: none
 }
 .ES-name {
-	color: #b1b1b1;
+	color: #282828;
 	-webkit-transform: translate(-50%, -50%) rotate(-90deg);
 	transform: translate(-50%, -50%) rotate(-90deg);
 	z-index: 5;
@@ -1372,7 +1375,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 
 @media (max-width:1366px) {
 #ES-header .ES-header-wrap h1 {
-	font-size: 55px
+	font-size: 36px
 }
 body {
 	font-size: 18px;
@@ -1436,9 +1439,7 @@ body {
 	margin: 18px 15px;
 	font-size: 14px
 }
-#ES-header .ES-header-wrap h1, #ES-header .ES-header-wrap p {
-	margin-left: 50px
-}
+
 ._service h2 {
 	padding: 5px 0 15px 0px
 }
@@ -1476,7 +1477,7 @@ body {
 	width: 65%
 }
 #ES-header .ES-header-wrap h1 {
-	font-size: 45px
+	font-size: 36px
 }
 ._aboutPage .nav-pills .nav-link {
 	margin-bottom: 10px
@@ -1513,6 +1514,10 @@ body {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0)
 }
+#ES-header .ES-header-wrap p {
+	font-size: 16px;
+	margin: 15px 120px;
+}
 
 }
 
@@ -1529,6 +1534,7 @@ body {
 .ES-section h1 {
 	margin-bottom: 25px
 }
+
 .EmberlineStudios {
 	width: 65px
 }
@@ -1710,14 +1716,24 @@ body {
 }
 
 @media (max-width:480px) {
+#ES-header{
+	position: relative;
+	background-color: #fafafa;
+	background-image: url(/public/images/EmberlineStudios-HeroImage_1x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 #ES-header .ES-header-wrap h1 {
-	font-size: 35px
+	font-size: 32px
 }
 .ES-section h1 {
 	margin-bottom: 25px
 }
 #ES-header .ES-header-wrap p, .about p, .footer ._email {
 	font-size: 14px
+}
+.TopPhone {
+	display: none;
 }
 .em-menu-bottom a {
 	font-size: 12px
@@ -1773,6 +1789,12 @@ body {
 .ES-section h1 {
 	font-size: 26px
 }
+#ES-header .ES-header-wrap h1 {
+	font-size: 26px
+}
+#ES-header .ES-header-wrap p {
+	margin: 20px 80px;
+}
 .abouthome h1 {
 	font-size: 26px
 }
@@ -1781,6 +1803,11 @@ body {
 }
 body {
 	font-size: 14px;
+}
+.TopPhone {
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: none;
 }
 .projektDiv {
 	height: 414px;
@@ -1801,9 +1828,6 @@ body {
 .mw_bg {
 	min-height: 100vh;
 	max-height: 100vh
-}
-#ES-header .ES-header-wrap h1, #ES-header .ES-header-wrap p {
-	margin-left: 50px
 }
 .social-icon {
 	left: 37px
@@ -1881,8 +1905,13 @@ body {
 .GS-sec .col {
     letter-spacing: 0;
     font-size: 13px
+
+}
+#ES-header .ES-header-wrap p {
+	margin: 20px 65px;
 }
 }
+
 
 @media (max-width:320px) {
 .menu_icon {
@@ -1891,7 +1920,11 @@ body {
 }
 .TopPhone {
 	font-size: 14px;
-	letter-spacing: 1px
+	letter-spacing: 1px;
+	display: none;
+}
+#ES-header .ES-header-wrap p {
+	margin: 20px 42px;
 }
 ._pro-BG::after {
 	width: 100%

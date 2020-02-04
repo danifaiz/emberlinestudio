@@ -13,13 +13,9 @@ export default function ESHeader() {
 
                 <div className="ES-header-wrap">
                     <div className="container">
-                        <h1>YOUR SKYWARD</h1>
-                        <h1>COMPANION</h1>
-                        <p>Concert Hall is the architecture of a new generation, a building
-                             that exists not only in the dimension of space
-                        </p>
+                        <h1>A DESIGN AGENCY</h1>
+                        <p>WHERE CREATIVITY, PASSION AND VISION ARE CHERISHED.</p>
                     </div>
-
                 </div>
             </div>
     )

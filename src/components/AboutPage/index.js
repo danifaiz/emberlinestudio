@@ -23,7 +23,7 @@ class AboutPage extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <h1 className="text-uppercase">WHO WE ARE</h1>
-                                <p className="mb-0">The chronicle of Emberline Studio is a story of three designers who loved their work and wanted to be problem solvers. After working individually for years, they decided to share a platform in the design industry. We are an independent design firm owned by a triangle of multi-talented design graduates working for over a year now. Based out of Lahore, Pakistan – we have delivered both local and international projects successfully.</p>
+                                <p className="mb-0">The chronicle of Emberline Studios is a story of three designers who loved their work and wanted to be problem solvers. After working individually for years, they decided to share a platform in the design industry. Today, we are an independent design firm owned by a triangle of multi-talented designers.</p>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ class AboutPage extends Component {
                         <div className="row">
                             <div className="col-lg-5 col-md-12">
                                 <h1 className="text-uppercase">WHAT WE DO</h1>
-                                <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites.</p>
+                                <p>Our atlas covers architecture & interiors, amusement park designs, retail kiosks & exhibitions, branding & graphics, UI/UX of digital products, 3D integrated designs and animations.</p>
                             </div>
 
                             <div className="col-md-12 mt-50">
@@ -94,7 +94,7 @@ class AboutPage extends Component {
                         <div className="row">
                             <div className="col-lg-5 col-md-12">
                                 <h1 className="text-uppercase">our approach</h1>
-                                <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion. Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites.</p>
+                                <p>We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations.</p>
                             </div>
 
                             <div className="col-md-12 mt-50">
@@ -109,7 +109,7 @@ class AboutPage extends Component {
                                     <div className="col-12 tab-content" id="pills-tabContent">
                                         <div className="tab-pane fade show active" id="Moodboard" role="tabpanel" aria-labelledby="Moodboard-tab">
                                             <h3>Moodboard</h3>
-                                            <p> We compile our vision into a brief presentation and help you visualize the art direction we would take for your project. </p>
+                                            <p>We organize our study about your project into a brief presentation which helps both parties to visualize the art direction being followed. This helps us to get on the same page with our clients.</p>
                                         </div>
                                         <div className="tab-pane fade" id="Brainstorm" role="tabpanel" aria-labelledby="Brainstorm-tab">
                                             <h3>Brainstorm</h3>
@@ -117,7 +117,7 @@ class AboutPage extends Component {
                                         </div>
                                         <div className="tab-pane fade" id="Design01" role="tabpanel" aria-labelledby="Design01-tab">
                                             <h3>Design</h3>
-                                            <p> Actual hardwork begins at this stage, we spend tons of time on this phase. We shape ideas into reality; visualize, iterate, and create drawing set for execution and easy implementation.</p>
+                                            <p>This is the fundamental stage of our work where we bring our ideas into reality; visualize, iterate, and create drawing set for execution and easy implementation.</p>
                                         </div>
                                         <div className="tab-pane fade" id="Execution" role="tabpanel" aria-labelledby="Execution-tab">
                                             <h3>Execution</h3>
@@ -140,9 +140,9 @@ class AboutPage extends Component {
                         <div className="row">
                             <div className="col-md-7 philosophy">
                                 <h1 className="text-uppercase">our PHILOSOPHY</h1>
-                                <p>Emberline Studios is a blend of two subjects – Ember & Line – and has been symbolized in a Phoenix logo.</p>
+                                <p>Emberline Studios is a blend of two subjects – Ember & Line – and has been symbolized as a Phoenix.</p>
                                 <p><strong>Ember</strong> is the last burning piece of a dying fire. It is also the crux of a phoenix’s rebirth. Thus, ember – to us – personifies hope; a promise which enables us to start over again when we fail. It also reflects our faith in Allah who would forgive and nullify our sins when we repent.</p>
-                                <p className="mb-0"><strong>Line</strong> is a one-dimensional figure with infinite ends. This is a depiction of a phoenix’s eternal life. When confined between two points, a line becomes a vector; a line segment with magnitude and direction. This symbolizes a phoenix’s journeys between each reincarnation. Hence, line – to us – is direction; a flight that has Allah’s throne as its destination.</p>
+                                <p className="mb-0"><strong>Line</strong> is a one-dimensional shape with infinite ends. It personifies a phoenix’s eternal life and its infinite journey. Hence, line – to us – is consistency & direction; a flight that has Allah’s throne as its destination.</p>
                             </div>
                             <div className="col-md-5">
                                 <div className="AB-logo">
@@ -165,7 +165,7 @@ class AboutPage extends Component {
                                 </div>
                                 <div className="OV-cont">
                                     <h3>Part of your circle</h3>
-                                    <p>Being connected with our clients is what fuels us and helps us grow. This healthy relationship, more often than not, results in an increment of ideas and opportunities.</p>
+                                    <p>Being connected with people is what fuels us and helps us grow. This healthy relationship, more often than not, results in an increment of ideas and opportunities.</p>
                                 </div>
                                 <div className="OV-cont">
                                     <h3>Facta Non Verba</h3>

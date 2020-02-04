@@ -81,7 +81,7 @@ export default class Home extends Component {
                         <div className="row">
                             <div className="col-12 text-center">       
                                 <h1>ABOUT US</h1> 
-                                <p>The chronicle of Emberline is a story of three inventors who wanted to serve people and make their lives easier. Fueled by a single dream, these fellow men started working together which did the magic and they were able to put a smile on every face they worked with.</p>
+                                <p>We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations. Our devotion is rewarded by our portfolio that is versatile and expanding fast.</p>
                                 <NavLink className="button" to="/about">Learn More</NavLink>
                             </div>
                         </div>
@@ -133,16 +133,18 @@ export default class Home extends Component {
                                 <h1>OUR CLIENTS</h1>
                                 <div className="_partner">
                                     <div className="row">
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/thermo-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/jojo-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/adventure-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/yoyo-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/jazzi-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/fg-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/nic-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/prince-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/usman-color.png" alt="" /></div>
-                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/dha-color.png" alt="" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/thermo-color.png" alt="Industrial Enterprises" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/jojo-color.png" alt="Jojo Confectioneries PVT Ltd" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/adventure-color.png" alt="Adventure Planet Indoor Playland" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/yoyo-color.png" alt="YoyoLand Indoor Playland" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/jazzi-color.png" alt="Jazzi Amusement" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/Uzham-Fashion.png" alt="Uzham Fashion" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/nic-color.png" alt="National Incubation Center - LUMS Lahore " /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/prince-color.png" alt="Prince Hair Salon" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/usman-color.png" alt="Usman Fragrances" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/dha-color.png" alt="Defence Housing Society" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/Panel_Logo_trasnparent_s.png" alt="Panel Analytics" /></div>
+                                        <div className="col-lg-2 col-md-4 col-6"><img src="images/fg-color.png" alt="F&G Enterprises" /></div>
                                     </div>
     
                                 </div>

@@ -79,7 +79,7 @@ class Contact extends Component {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h1 className="text-uppercase">GET IN TOUCH</h1>
-                                <p className="mb-0">xxxxx xx x xx x xx xxxx</p>
+                                <p className="mb-0">Don't be shy, Say Hi!</p>
                             </div>
                         </div>
                     </div>

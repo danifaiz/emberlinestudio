@@ -94,7 +94,7 @@ export default class Projects extends Component {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h1 className="text-uppercase">Current projects</h1>
-                                <p className="mb-0">We provide our clients a full range of design services with a promise of excellence and ingenuity.</p>
+                                <p className="mb-0">We provide our clients a wide range of design services with a promise of excellence and ingenuity.</p>
                             </div>
                         </div>
                     </div>
