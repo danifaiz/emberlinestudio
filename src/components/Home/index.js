@@ -100,9 +100,11 @@ export default class Home extends Component {
                                     margin={10}
                                     nav
                                     autoplay
-                                    autoplayTimeout="9000"
+                                    dragEndSpeed="800"
+                                    autoplayTimeout="8000"
                                     autoplayHoverPause
-                                    smartSpeed="2000"
+                                    dotData
+                                    smartSpeed="1000"
                                     responsive={responsiveOwl}
                                 >
                                     {projects.map( project => (

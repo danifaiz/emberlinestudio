@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	float: left;
 	width: 100px;
 }
-#ESlogo .st0 {
+.ESlogo .st0 {
 	stroke-width: 1;
 	stroke-miterlimit: 10;
 	stroke: rgb(238,57,57);
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	opacity: 10;
 	animation: ESlogo 1.5s cubic-bezier(0, .23, 1, .1);
 }
-.EmberlineStudios-m #ESlogo .st0 {
+.EmberlineStudios-m .ESlogo .st0 {
 	stroke-width: 1;
 	stroke-miterlimit: 10;
 	stroke: rgb(255,255,255);

@@ -18,7 +18,7 @@ class Footer extends Component {
                 <div className="footer">
                     <div className="container">
                         <div className="row">
-                            <NavLink className="col-md-4" to="/">
+                            <NavLink className="col-md-4" to="/" aria-label="EmberlineStudios">
                                 <img className="_FLogo" src="images/emberline-studios.svg" alt="" /> </NavLink>
                             <div className="col-md-4 text-center">
                                 <span className="_ph">+92 333 477 89 77</span>
