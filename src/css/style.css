@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	min-height: 100vh;
 	position: relative;
 	background-color: #fafafa;
-	background-image: url(/public/images/EmberlineStudios-HeroImage_2x.png);
+	background-image: url(/images/EmberlineStudios-HeroImage_2x.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1719,7 +1719,7 @@ body {
 #ES-header{
 	position: relative;
 	background-color: #fafafa;
-	background-image: url(/public/images/EmberlineStudios-HeroImage_1x.png);
+	background-image: url(/images/EmberlineStudios-HeroImage_1x.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
