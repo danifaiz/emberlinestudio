@@ -64,7 +64,7 @@ class AboutPage extends Component {
                                                 <img src="images/Interior-ab.jpg" width="1140" height="790" alt="Interior" />
                                             </div>
                                             <div className="tab-pane fade" id="Graphics" role="tabpanel" aria-labelledby="Graphics-tab">
-                                                <img src="images/Graphics-ab.png" width="1140" height="790" alt="Graphics" />
+                                                <img src="images/Graphics-ab.jpg" width="1140" height="790" alt="Graphics" />
                                             </div>
                                             <div className="tab-pane fade" id="Branding" role="tabpanel" aria-labelledby="Branding-tab">
                                                 <img src="images/Branding-ab.jpg" width="1140" height="790" alt="Branding" />
