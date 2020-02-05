@@ -8,6 +8,7 @@ import Script from 'react-load-script'
 import { Link } from 'react-router-dom'
 import Services from '../Services'
 import Tilt from 'react-tilt'
+
 export default class Home extends Component {
     state = {
         projects:[]
@@ -82,7 +83,7 @@ export default class Home extends Component {
                             <div className="col-12 text-center">       
                                 <h1>ABOUT US</h1> 
                                 <p>We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations. Our devotion is rewarded by our portfolio that is versatile and expanding fast.</p>
-                                <NavLink className="button" to="/about">Learn More</NavLink>
+                                <NavLink className="button" to="/about">About Us</NavLink>
                             </div>
                         </div>
                     </div>
