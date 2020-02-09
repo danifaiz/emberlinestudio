@@ -83,7 +83,7 @@ export default class Home extends Component {
                             <div className="col-12 text-center">       
                                 <h1>ABOUT US</h1> 
                                 <p>We are of the few firms where owners create design and serve as the primary contact for clients. This shows our love for work and commitment for people who demand strong design sensations. Our devotion is rewarded by our portfolio that is versatile and expanding fast.</p>
-                                <NavLink className="button" to="/about">About Us</NavLink>
+                                <NavLink className="button" to="/about">Our Story</NavLink>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,8 @@ export default class Home extends Component {
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.cloudurl} alt={project.title} /> 
+                                                        <img src={project.cloudurl} alt={project.title} >
+                                                             </img> 
                                             </Tilt>
                                             </Link>
                                         </div>

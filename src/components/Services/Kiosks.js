@@ -50,18 +50,6 @@ export default class Kiosks extends Component {
                         </div>
                     </div>
                 </div>
-
-                <div class="ES-section about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h1 class="text-uppercase">lets work together</h1>
-                                <p>Exciting and challenging projects are driving us, but also a lively exchange of experience and interests is close to our hearts. If you are looking for an agency with which you want to grow together, then we are the right partner.</p>
-                                <NavLink className="button moveToTop" to="/contact">CONTACT US</NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         )
     }
