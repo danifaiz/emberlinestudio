@@ -45,6 +45,14 @@ export default class Home extends Component {
     componentWillUnmount() {
         
     }
+    imageBrowserCompatible(url) {
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof window['safari'] !== 'undefined' && window['safari'].pushNotification));
+        if(isSafari) {
+            return url.replace(".webp",".png")
+        } else {
+            return url;
+        }
+    }
     render() {
         let responsiveOwl = {
             320: {
@@ -113,7 +121,7 @@ export default class Home extends Component {
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-                                                        <img src={project.cloudurl} alt={project.title} /> 
+                                                        <img src={this.imageBrowserCompatible(project.cloudurl)} alt={project.title} /> 
                                             </Tilt>
                                             </Link>
                                         </div>

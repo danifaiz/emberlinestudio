@@ -14,6 +14,14 @@ export default class ProjectDetail extends Component {
         }
         
     }
+    imageBrowserCompatible(url) {
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof window['safari'] !== 'undefined' && window['safari'].pushNotification));
+        if(isSafari) {
+            return url.replace(".webp",".png")
+        } else {
+            return url;
+        }
+    }
     componentDidMount() {
         const projectIdMap = JSON.parse(localStorage.getItem("projectIdMap"));
         axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + projectIdMap[this.props.match.params.projectTitle])
@@ -34,7 +42,7 @@ export default class ProjectDetail extends Component {
                 <div key={item.id} className={"col-md-" + item.grid + " mb-30"}>
                       <div class="reveal-holder" data-aos="reveal-item">
           <div class="reveal-block right" data-aos="reveal-right"></div> 
-                    <img src={item.cloudurl} alt={this.state.project.title + "-" + key} />
+                    <img src={this.imageBrowserCompatible(item.cloudurl)} alt={this.state.project.title + "-" + key} />
                     </div>
                     </div>
         );
