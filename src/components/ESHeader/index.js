@@ -14,7 +14,7 @@ export default function ESHeader() {
                 <div className="ES-header-wrap">
                     <div className="container">
                         <h1>A DESIGN AGENCY</h1>
-                        <p>WHERE CREATIVITY, PASSION AND VISION ARE CHERISHED.</p>
+                        <p>WHERE CREATIVITY, IMAGINATION AND VISION ARE CHERISHED.</p>
                     </div>
                 </div>
             </div>
