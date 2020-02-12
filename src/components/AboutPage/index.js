@@ -193,14 +193,14 @@ class AboutPage extends Component {
                                 <div className="row happyCL">
                                     <div className="col-auto pr-0"><img src="images/thermo-color.png" width="240" height="150" alt="" /></div>
                                     <div className="col">
-                                        <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                        <p>Emberline Studios is a productive and resourceful team. They developed 3D models and 3D renderings for my proposals. They understand Styrofoam material as well as Styrofoam props and decorative products which Thermocut makes. I am satisfied with their work and also suggest others to work with them. Best of luck to them.</p>
                                         <p><strong>Ahyan, Director Operations, at Thermocut</strong></p>
                                     </div>
                                 </div>
                                 <div className="row happyCL">
                                     <div className="col-auto pr-0"><img src="images/jojo-color.png" width="240" height="150" alt="" /></div>
                                     <div className="col">
-                                        <p>Our atlas covers graphics and branding, architecture and interiors, amusement and fun, digital products and websites. We do all of this unapologetically and with passion.</p>
+                                        <p>This agency has a smooth work pipeline and my experience working with them has been great. They have designed and executed numerous retail kiosks and carts for us. I am pleased to have this team on board and would surely recommend others to work with them.</p>
                                         <p><strong>Farooq, Manager Marketing, at JOJO Foods</strong></p>
                                     </div>
                                 </div>
