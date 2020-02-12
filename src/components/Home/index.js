@@ -124,12 +124,7 @@ export default class Home extends Component {
                                                     <div className="p-content">
                                                         <h2>{project.title}</h2>
                                                         <span>{project.categories.map( (category,index) => ( project.categories.length == index+1  ? category.name :  category.name + "," )) }</span> </div>
-<<<<<<< HEAD
-                                                        <img src={project.cloudurl} alt={project.title} >
-                                                             </img> 
-=======
                                                         <img src={this.imageBrowserCompatible(project.cloudurl)} alt={project.title} /> 
->>>>>>> 33b2739d331b1c4ee1f68b11db2ff936bf963d06
                                             </Tilt>
                                             </Link>
                                         </div>
