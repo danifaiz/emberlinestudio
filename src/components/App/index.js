@@ -9,6 +9,7 @@ import AboutPage from '../AboutPage'
 import Contact from '../Contact'
 import ProjectDetail from '../ProjectDetail'
 import ServicesDetail from '../Services/ServicesDetail'
+import Ecommerce from '../Ecommerce'
 
 import * as ROUTES from '../../constants/routes'
 
@@ -60,6 +61,8 @@ class App extends Component {
             <Route path={ROUTES.CONTACT_US} component={Contact} />
             <Route path={ROUTES.PROJECT_DETAIL} component={ProjectDetail} />
             <Route path={ROUTES.SERVICES_DETAIL} component={ServicesDetail} />
+            <Route path={ROUTES.ECOMMERECE_SOLUTION} component={Ecommerce} />
+
             
             <Footer/>
             

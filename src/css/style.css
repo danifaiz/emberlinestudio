@@ -2120,6 +2120,42 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.ecom ul li {
+	color: #EF373A;
+}
+.ecommerece{
+	padding: 50px;
+	margin: 0;
+}
+.ecommerece h2{
+		font-size: 28px;
+    margin-bottom: 20px;
+}
+.ecommerece ul li {
+	list-style: none;
+	margin-bottom: 15px;
+	margin-left: 35px;
+}
+.discover{
+	margin-left: 15%;
+	margin-top: 12%;
+}
+.ecommerece ul li::before{
+	content: "\2022";
+  color: #EF373A;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+	font-size: 36px;
+}
+.revenue{
+margin-left: 23%;
+margin-top: 20%;
+}
+.margin-minus{
+	margin-bottom: -6%;
+}
 /* AOS animate */
 [data-aos="reveal-top"], [data-aos="reveal-left"], [data-aos="reveal-right"], [data-aos="reveal-bottom"] {
 	transition-property: transform;

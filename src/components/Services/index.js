@@ -111,6 +111,19 @@ export default class Services extends Component {
                                 </NavLink>
                             </Tilt>
 
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                                <NavLink to="/ecommerce-solution">
+                                    <figure>
+                                        <img src="images/ECommerce.png" alt="Amusement Design" />
+                                        <h2>E-commerce Solution</h2>
+                                        <div className="_button-arrow">
+                                            <p>More Info</p>
+                                            <span className="arrow"></span>
+                                        </div>
+                                    </figure>
+                                </NavLink>
+                            </Tilt>
+
                         </div>
                     </div>
                 </div>
