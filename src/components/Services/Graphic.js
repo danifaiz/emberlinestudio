@@ -37,7 +37,7 @@ export default class Graphic extends Component {
                             <div class="col-lg-6 col-md-12">
                                 <div class="conBox W800bg">
                                     <h2 class="text-uppercase">WHAT IS BRANDING?</h2>
-                                    <p class="mb-15">What is branding and do you need it? Answer is simple: Yes. Branding is what your customers/audience perceive of you. If you as a company can delight your buyers you will become a brand over time and will sell more for higher prices.</p>
+                                    <p class="mb-15">What is branding and do you need it? Branding is what your customers/audience perceive of you. If you as a company can delight your audience you will become a brand over time and will sell more for higher prices.</p>
                                     <p>You need a branding agency at your back that understands your audience and creates a compelling visual story that communicates your purpose.</p>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export default class Graphic extends Component {
                             <div className="col-lg-8 col-md-12">
                                 <div className="conBox">
                                     <h2>We foster relation between you and your clients with branding and strategy</h2>
-                                    <p>The first and very important aspect of our approach is understanding your audience, who you are speaking to and how you should address them. For these and many more questions we sit with you for our discovery session where we discuss the needs,likes and wants of your customers.</p>
+                                    <p>The first and very important aspect of our approach is understanding your audience, who you are speaking to and how you should address them. For these and many more questions we sit with you for our discovery session where we discuss the needs, likes and wants of your customers.</p>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ export default class Graphic extends Component {
                                 <div class="conBox">
                                     <h2 class="text-uppercase">OUR PROCESS</h2>
                                     <p class="mb-15">It all starts with us talking to each other about the brand. Then we plan how brand is going to talk with whom and in what tone.</p>
-                                    <p>Brand strategy is the important part to make a brand successful. From what we gather from you helps us transform your business into a rich visual ident ity that makes your brand sound unique, authentic and memorable.</p>
+                                    <p>Brand strategy is the important part to make a brand successful. From what we gather from you helps us transform your business into a rich visual identity that makes your brand sound unique, authentic and memorable.</p>
                                 </div>
                             </div>
 
@@ -99,7 +99,7 @@ export default class Graphic extends Component {
                                     <div className="card1 pricing-heading">
                                         <p className="pricing-text"><strong>For start-ups</strong></p>
                                         <h2>$1500</h2>
-                                        {this.state?.startups.map(startup =>
+                                        {this.state.startups.map(startup =>
                                         startup === "3 Rounds of Revision" 
                                         ? <p><strong>{startup}</strong></p>
                                         : <p>{startup}</p>
@@ -110,7 +110,7 @@ export default class Graphic extends Component {
                                     <div className="card1 pricing-heading">
                                         <p className="pricing-text"><strong>Rediscover & Grow</strong></p>
                                         <h2>$3500</h2>
-                                        {this.state?.redescover.map(redescover =>
+                                        {this.state.redescover.map(redescover =>
                                         redescover === "3 Rounds of Revision" 
                                         ? <p><strong>{redescover}</strong></p>
                                         : <p>{redescover}</p>
