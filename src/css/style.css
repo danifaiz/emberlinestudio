@@ -2094,6 +2094,33 @@ body {
 	transform: scaleY(0);
 	transform-origin: 100% 0%;
 }
+.alivio_image{
+	width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.pricing-detail-head{
+	margin: auto;
+	padding-top: 60px;
+}
+.pricing-heading{
+	text-align: center;
+}
+.pricing-text{
+	margin-bottom: 0rem;
+}
+.card1{
+	box-shadow: 0px 0px 20px rgb(0 0 0 / 16%), 0 0px 0px rgb(0 0 0 / 23%);
+	border-radius: 25px;
+	padding: 27px;
+	height: 100%;
+}
+.clients-logos{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* AOS animate */
 [data-aos="reveal-top"], [data-aos="reveal-left"], [data-aos="reveal-right"], [data-aos="reveal-bottom"] {
 	transition-property: transform;

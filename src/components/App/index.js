@@ -39,7 +39,8 @@ class App extends Component {
     });
 }
   componentWillMount() {
-    
+    localStorage.clear()
+    sessionStorage.clear()
   }
   componentDidMount() {
     App.loadScripts();

@@ -75,8 +75,8 @@ export default class Services extends Component {
                             <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/graphic">
                                     <figure>
-                                        <img src="images/graphics.png" alt=""/>
-                                        <h2>Branding & Graphics</h2>
+                                        <img src="images/branding.png" alt=""/>
+                                        <h2>Branding & Strategy</h2>
                                         <div className="_button-arrow">
                                             <p>More Info</p>
                                             <span className="arrow"></span>
