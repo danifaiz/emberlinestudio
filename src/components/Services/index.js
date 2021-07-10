@@ -73,7 +73,7 @@ export default class Services extends Component {
                             </Tilt>
 
                             <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
-                                <NavLink to="/service/graphic">
+                                <NavLink to="/service/branding-strategy">
                                     <figure>
                                         <img src="images/branding.png" alt=""/>
                                         <h2>Branding & Strategy</h2>

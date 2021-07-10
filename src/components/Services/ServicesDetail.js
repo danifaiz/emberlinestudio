@@ -31,7 +31,7 @@ export default class ServicesDetail extends Component {
             serviceContent = <Uiux/>;
         } else if(service=="animation"){
             serviceContent = <Animation/>;
-        } else if(service=="graphic"){
+        } else if(service=="branding-strategy"){
             serviceContent = <Graphic/>;
         } else if(service=="amusement"){
             serviceContent = <Amusement/>;
