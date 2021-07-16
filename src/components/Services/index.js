@@ -34,7 +34,7 @@ export default class Services extends Component {
                             <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/amusement">
                                     <figure> 
-                                        <img src="images/amusement.png" alt=""/>
+                                        <img src="images/amusement.png" alt="" className="card-image"/>
                                         <figcaption>    
                                         <h2>Amusement & Fun</h2>
                                         <div className="_button-arrow">

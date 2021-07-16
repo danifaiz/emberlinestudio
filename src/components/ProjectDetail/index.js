@@ -25,6 +25,7 @@ export default class ProjectDetail extends Component {
     }
     componentDidMount() {
         const projectIdMap = JSON.parse(localStorage.getItem("projectIdMap"));
+        console.log(PATHS, this.props)
         axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + projectIdMap[this.props.match.params.projectTitle])
              .then(res => {
                  console.log(res.data);

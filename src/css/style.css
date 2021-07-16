@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	transform: translateZ(20px);
 	padding: 10px 20px;
 	z-index: 1;
-	filter: drop-shadow(0 20px 15px rgba(136,142,160,.4));
+	filter: drop-shadow(0 0px 0px );
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
 	-o-transition: all 0.1s linear;
@@ -2156,6 +2156,9 @@ margin-top: 20%;
 }
 .margin-minus{
 	margin-bottom: -6%;
+}
+.card-image{
+	box-shadow: 0;
 }
 /* AOS animate */
 [data-aos="reveal-top"], [data-aos="reveal-left"], [data-aos="reveal-right"], [data-aos="reveal-bottom"] {

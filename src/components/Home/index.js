@@ -117,6 +117,7 @@ export default class Home extends Component {
                                     smartSpeed="1000"
                                     responsive={responsiveOwl}
                                 >
+                                    {console.log(projects)}
                                     {projects.map( project => (
                                         <div key={project.id} className="item">
                                             <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()} >
