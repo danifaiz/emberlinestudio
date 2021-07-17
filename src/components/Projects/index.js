@@ -123,7 +123,7 @@ export default class Projects extends Component {
                             </div>
                             <div className="col-12 filters-content" >
                                     <div className="row grid">
-                            {projects.map( project => (
+                            {projects && projects.map( project => (
                                         <div key={project.id} className={"col-lg-4 col-md-6 col-sm-6 col-12 all " + project.categories.map( category =>  category.name.toLowerCase()).join(" ") }>
                                             <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()}>
                                                 <div className="project-thumb">

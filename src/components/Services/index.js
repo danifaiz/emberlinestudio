@@ -34,7 +34,7 @@ export default class Services extends Component {
                             <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
                                 <NavLink to="/service/amusement">
                                     <figure> 
-                                        <img src="images/amusement.png" alt=""/>
+                                        <img src="images/amusement.png" alt="" className="card-image"/>
                                         <figcaption>    
                                         <h2>Amusement & Fun</h2>
                                         <div className="_button-arrow">
@@ -103,6 +103,19 @@ export default class Services extends Component {
                                     <figure>
                                         <img src="images/3danimation.png" alt="Amusement Design" />
                                         <h2>3D & Animation</h2>
+                                        <div className="_button-arrow">
+                                            <p>More Info</p>
+                                            <span className="arrow"></span>
+                                        </div>
+                                    </figure>
+                                </NavLink>
+                            </Tilt>
+
+                            <Tilt options={tiltOptions} className="col-xs-12 col-sm-6 col-md-6 col-lg-4 _service js-tilt">
+                                <NavLink to="/ecommerce-solution">
+                                    <figure>
+                                        <img src="images/ECommerce.png" alt="Amusement Design" />
+                                        <h2>E-commerce Solution</h2>
                                         <div className="_button-arrow">
                                             <p>More Info</p>
                                             <span className="arrow"></span>
