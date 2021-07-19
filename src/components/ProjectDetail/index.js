@@ -24,20 +24,29 @@ export default class ProjectDetail extends Component {
         }
     }
     componentDidMount() {
-        const projectIdMap = JSON.parse(localStorage.getItem("projectIdMap"));
-        console.log(PATHS, this.props)
-        axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + projectIdMap[this.props.match.params.projectTitle])
-             .then(res => {
-                 console.log(res.data);
-                const project = res.data[0];
-                this.setState({ project: project});
-                this.setState({ tags : project.categories.map( category =>  category.name).join(",")}) 
-                this.setState({ gallery: project.gallery});
-             })
-             .catch(function (error) {
-                console.log(error);
-             });
-             window.scrollTo(0, 0)
+        axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECTS_URL}`)
+            .then(res => {
+               const projects = res.data;
+               const projectIdMap = {};
+               projects.forEach(function (project) {
+                    var title = project.title.replace(/ /g,"-").toLowerCase();
+                    projectIdMap[title] = project.id;
+               });
+                axios.get(`${PATHS.BASE_URL}`+`${PATHS.PROJECT_DETAIL_URL}` + projectIdMap[this.props.match.params.projectTitle])
+                    .then(res => {
+                        const project = res.data[0];
+                        this.setState({ project: project});
+                        this.setState({ tags : project.categories.map( category =>  category.name).join(",")}) 
+                        this.setState({ gallery: project.gallery});
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+                    window.scrollTo(0, 0)
+            })
+            .catch(function (error) {
+               console.log(error);
+            });
     }
     render() {
         const images = this.state.gallery.map((item,key) =>
