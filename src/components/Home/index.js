@@ -8,6 +8,8 @@ import Script from 'react-load-script'
 import { Link } from 'react-router-dom'
 import Services from '../Services'
 import Tilt from 'react-tilt'
+import Quote from '../Quote';
+import LandingServices from '../LandingServices';
 
 export default class Home extends Component {
     state = {
@@ -82,10 +84,11 @@ export default class Home extends Component {
             transition: true,
         };
         const projects = this.state.projects
-        console.log(projects);
         return (
             <div>
                 <ESHeader/>
+                <Quote />
+                <LandingServices />
                 <div className="abouthome">
                     <div className="container">
                         <div className="row">

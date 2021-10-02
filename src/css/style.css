@@ -2201,3 +2201,57 @@ margin-top: 20%;
 [data-aos="reveal-item"].aos-animate {
 	visibility: visible;
 }
+
+.quote-main{
+
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 29px;
+line-height: 45px;
+/* or 150% */
+padding-top: 50px;
+ margin: auto;
+ width: 60%;
+
+ display: flex;
+ text-align: center;
+}
+@media only screen and (min-width: 768px){
+	.services-heading-landing{
+		margin: auto;
+		 width: 60%;
+		 margin-top: 70px;
+	}
+	.services-landing-paragraph{
+		margin: auto;
+		width: 60%;
+		margin-top: 100px;
+	}
+}
+
+.services-landing-paragraph{
+	font-family: Poppins;
+}
+.services-landing-paragraph-text{
+	width: 650px;
+	line-height: 26px;
+	font-family: Lato;
+	font-style: normal;
+}
+.nav-link-landing{
+	margin-top: 2px;
+}
+.img-landing{
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+.image-services-landing{
+	position: relative;
+  top: 50%;
+	transform: translateY(-50%);
+}
+.image-background-color{
+	background-color: #1E1D57;
+}
