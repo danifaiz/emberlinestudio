@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from '../Header'
 import Home from '../Home'
 import Footer from '../Footer'
@@ -51,23 +51,19 @@ class App extends Component {
   render() {
     return (
         <Router>
-          <div>
-             
             <Header/>
-            <Route exact path={ROUTES.Landing} component={Home} />
-            <Route path={ROUTES.HOME} component={Home} />
-            <Route path={ROUTES.PROJECTS} component={Projects} />
-            <Route path={ROUTES.ABOUT_US} component={AboutPage} />
-            <Route path={ROUTES.SERVICES} component={Services} />
-            <Route path={ROUTES.CONTACT_US} component={Contact} />
-            <Route path={ROUTES.PROJECT_DETAIL} component={ProjectDetail} />
-            <Route path={ROUTES.SERVICES_DETAIL} component={ServicesDetail} />
-            <Route path={ROUTES.ECOMMERECE_SOLUTION} component={Ecommerce} />
-
-            
+            <Switch>
+              <Route exact path={ROUTES.Landing} component={Home} />
+              <Route path={ROUTES.HOME} component={Home} />
+              <Route path={ROUTES.PROJECTS} component={Projects} />
+              <Route path={ROUTES.ABOUT_US} component={AboutPage} />
+              <Route path={ROUTES.SERVICES} component={Services} />
+              <Route path={ROUTES.CONTACT_US} component={Contact} />
+              <Route path={ROUTES.PROJECT_DETAIL} component={ProjectDetail} />
+              <Route path={ROUTES.SERVICES_DETAIL} component={ServicesDetail} />
+              <Route path={ROUTES.ECOMMERECE_SOLUTION} component={Ecommerce} />
+            </Switch>
             <Footer/>
-            
-          </div>
         </Router>
     )
   }

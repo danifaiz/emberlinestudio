@@ -709,10 +709,15 @@ h1, h2, h3, h4, h5, h6, h7, h8, .button, ._button-arrow p, .footer ._ph, .es_men
 	margin-top: 20px;
 	color: #000;
 }
+.footer-email-container {
+	display: table;
+}
 .footer ._email {
 	color: #323332;
 	font-size: 16px;
-	text-decoration: none
+	text-decoration: none;
+	display: table-cell;
+	vertical-align: middle;
 }
 .footer ._email:HOVER {
 	color: #ef373a;
