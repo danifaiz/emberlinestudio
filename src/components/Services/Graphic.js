@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink }  from 'react-router-dom'
 export default class Graphic extends Component {
-    
-    state={
-        startups : ["Brand Discovery","Competitive Analysis","Brand Direction","Logo Design","Styles and Patterns","Logo Lockups","Mockups","Brand Book","3 Rounds of Revision","Brand Naming  +$300","Website Design +$2500"],
-        redescover : ["Brand Discovery","Competitive Analysis","Brand Direction","Brand Messaging","Brand Voice","Logo Redesign","Styles and Patterns","Logo Lockups","Mockups","Brand Book","3 Rounds of Revision","Website Redesign +$3500"]
-    }
     componentDidMount() {
         window.scrollTo(0, 0)
     }
@@ -84,39 +79,6 @@ export default class Graphic extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="pricing-detail-head">
-                                <div className="pricing-heading">
-                                    <h2 className="text-uppercase">PRICING DETAILS</h2>
-                                    <p className="pricing-text">We offer premium branding services in affordable prices.</p>
-                                    <p>Let’s connect with us on your preffered plan or custom requirement.</p>
-                                </div> 
-                            </div>
-                        </div>
-                        <div className="row">
-                                <div className="col-lg-6 col-md-12 mt-4">
-                                    <div className="card1 pricing-heading">
-                                        <p className="pricing-text"><strong>For start-ups</strong></p>
-                                        <h2>$1500</h2>
-                                        {this.state.startups.map(startup =>
-                                        startup === "3 Rounds of Revision" 
-                                        ? <p><strong>{startup}</strong></p>
-                                        : <p>{startup}</p>
-                                        )}
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 mt-4">
-                                    <div className="card1 pricing-heading">
-                                        <p className="pricing-text"><strong>Rediscover & Grow</strong></p>
-                                        <h2>$3500</h2>
-                                        {this.state.redescover.map(redescover =>
-                                        redescover === "3 Rounds of Revision" 
-                                        ? <p><strong>{redescover}</strong></p>
-                                        : <p>{redescover}</p>
-                                        )}
-                                    </div>
-                               </div>
                         </div>
                         <div className="row mt-5">
                             <div className = "pricing-detail-head">

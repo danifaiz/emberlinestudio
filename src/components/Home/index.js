@@ -4,7 +4,6 @@ import OwlCarousel from 'react-owl-carousel';
 import axios from 'axios';
 import * as PATHS from '../../constants/data_routes'
 import { NavLink }  from 'react-router-dom'
-import Script from 'react-load-script'
 import { Link } from 'react-router-dom'
 import Services from '../Services'
 import Tilt from 'react-tilt'
@@ -117,7 +116,6 @@ export default class Home extends Component {
                                     smartSpeed="1000"
                                     responsive={responsiveOwl}
                                 >
-                                    {console.log(projects)}
                                     {projects.map( project => (
                                         <div key={project.id} className="item">
                                             <Link to={"project/" + project.title.replace(/ /g,"-").toLowerCase()} >

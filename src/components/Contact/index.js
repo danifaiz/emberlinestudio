@@ -10,7 +10,8 @@ const INITIAL_STATE = {
     msg:'',
     error:null,
     response:null,
-    showLoader:false
+    showLoader:false,
+    isEmailValid:false
 }
 
 class Contact extends Component {
@@ -59,6 +60,14 @@ class Contact extends Component {
                 [event.target.name]: event.target.value
             }
         )
+        if(event.target.name == 'email') {
+            let isEmailValid = this.validateEmail(event.target.value)
+            this.setState({isEmailValid:isEmailValid})
+        }
+    }
+    validateEmail(emailAddress) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(emailAddress).toLowerCase());
     }
     componentDidLoad() {
         
@@ -70,8 +79,8 @@ class Contact extends Component {
         
     }
     render() {
-        const { name, email, contact, msg, error, response} = this.state;
-        const isInvalid =  name == "" || email == "" || contact == "" || msg == ""
+        const { name, email, contact, msg, error, response, isEmailValid} = this.state;
+        const isInvalid =  name == "" || email == "" || contact == "" || msg == "" || !isEmailValid
         return (
             <div>
                  <div className="ES-section about subpage">
