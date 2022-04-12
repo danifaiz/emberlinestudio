@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar';
 import $ from 'jquery'
-export default class Header extends Component {
+class Header extends Component {
     state = {
-        loadingBarProgress: 0
+        loadingBarProgress: 0,
+        isMenuWhite:false,
       };
       complete = () => {
         this.setState({ loadingBarProgress: 100 });
@@ -14,6 +15,8 @@ export default class Header extends Component {
       };
     componentDidMount () {
         this.complete()
+        const isBranding = this.props.location.pathname.includes('branding');
+        this.setState({isMenuWhite: isBranding})
         Header.loadScripts();
     }
     static loadScripts() {
@@ -26,6 +29,7 @@ export default class Header extends Component {
         });
     }
     render() {
+        const customMenuStyle = this.state.isMenuWhite ? {color: 'white'}: {};
         return (
             <div id="topHeader" className="topheader">
                 <LoadingBar
@@ -52,11 +56,12 @@ export default class Header extends Component {
                             <nav className="navbar navbar-expand-md">
                                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                                     <ul className="navbar-nav">
-                                        <li className="nav-item"><NavLink exact activeClassName="active" className="nav-link" to="/">HOME <span className="sr-only">(current)</span></NavLink></li>
-                                        <li className="nav-item"><NavLink className="nav-link" to="/projects">PROJECTS</NavLink></li>
-                                        <li className="nav-item"><NavLink className="nav-link" to="/services">SERVICES</NavLink></li>
-                                        <li className="nav-item"><NavLink className="nav-link" to="/about">ABOUT US</NavLink></li>
-                                        <li className="nav-item"><NavLink className="nav-link" to="/contact">CONTACT US</NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} exact activeClassName="active" className="nav-link" to="/">HOME <span className="sr-only">(current)</span></NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} className="nav-link" to="/projects">PROJECTS</NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} className="nav-link" to="/services">SERVICES</NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} className="nav-link" to="/branding">BRANDING</NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} className="nav-link" to="/about">ABOUT US</NavLink></li>
+                                        <li className="nav-item"><NavLink style={customMenuStyle} className="nav-link" to="/contact">CONTACT US</NavLink></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -122,3 +127,5 @@ export default class Header extends Component {
     )
    }
 }
+
+export default withRouter(Header);
