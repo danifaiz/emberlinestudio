@@ -31,13 +31,8 @@ class App extends Component {
       }
     };
     window.addEventListener("scroll", myScrollFunc);
-    $("#_menu").click(function () {
-      $(this).toggleClass("active");
-      $("#es_menu").toggleClass("open");
-      $(this).toggleClass("menu-open").toggleClass("menu-close");
-      $("body").toggleClass("no-scroll");
-    });
   }
+
   componentWillMount() {
     localStorage.clear();
     sessionStorage.clear();
