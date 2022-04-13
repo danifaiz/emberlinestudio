@@ -18,7 +18,7 @@ export default class Services extends Component {
     };
     return (
       <div>
-        <Header />
+        {this.props.hideHeader ? "" : <Header />}
         <div className="ES-section subpage">
           <div className="container">
             <div className="row">
