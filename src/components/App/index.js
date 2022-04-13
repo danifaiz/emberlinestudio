@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "../Header";
 import Home from "../Home";
 import Footer from "../Footer";
 import Projects from "../Projects";
 import Services from "../Services";
 import Branding from "../Branding/Branding";
+import BrandingBook from "../BrandingBook/BrandingBook";
 import AboutPage from "../AboutPage";
 import Contact from "../Contact";
 import ProjectDetail from "../ProjectDetail";
@@ -13,8 +13,6 @@ import ServicesDetail from "../Services/ServicesDetail";
 import Ecommerce from "../Ecommerce";
 
 import * as ROUTES from "../../constants/routes";
-
-import $ from "jquery";
 
 class App extends Component {
   state = {
@@ -48,6 +46,7 @@ class App extends Component {
           <Route exact path={ROUTES.Landing} component={Home} />
           <Route path={ROUTES.HOME} component={Home} />
           <Route path={ROUTES.BRANDING} component={Branding} />
+          <Route path={ROUTES.BRANDING_BOOK} component={BrandingBook} />
           <Route path={ROUTES.PROJECTS} component={Projects} />
           <Route path={ROUTES.ABOUT_US} component={AboutPage} />
           <Route path={ROUTES.SERVICES} component={Services} />
