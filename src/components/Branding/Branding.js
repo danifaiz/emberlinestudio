@@ -8,6 +8,8 @@ import "../../css/hvco-pdf.css";
 import Header from "../Header";
 import { executeScroll, imageBrowserCompatible } from "../../util";
 import CalendlyForm from "../CalendlyForm/calendlyform";
+import * as ROUTES from "../../constants/routes";
+import brandingImg from "../../images/branding-img.jpg";
 
 export default function Branding({ ...props }) {
   const bookMyCallRef = useRef(null);
@@ -326,13 +328,17 @@ export default function Branding({ ...props }) {
                   without hiring Expensive Experts in just 1 Week!
                 </li>
               </ul>
-              <img className="d-mob" src="images/branding-img.jpg" alt="" />{" "}
-              <a className="btn button-vds" href="#">
+              <img
+                className="d-mob"
+                src={brandingImg}
+                alt="Emberlinestudio Branding"
+              />
+              <Link to={ROUTES.BRANDING_BOOK} className="btn button-vds">
                 GET YOUR COPY!
-              </a>{" "}
+              </Link>
             </div>
             <div className="col-md-6 m-auto h-mob ">
-              <img src="images/branding-img.jpg" alt="" />
+              <img src={brandingImg} alt="Emberlinestudio Branding" />
             </div>
           </div>
         </div>

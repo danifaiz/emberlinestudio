@@ -8,3 +8,4 @@ export const PROJECT_DETAIL = "/project/:projectTitle";
 export const SERVICES_DETAIL = "/service/:serviceType";
 export const ECOMMERECE_SOLUTION = "/ecommerce-solution";
 export const BRANDING = "/branding";
+export const BRANDING_BOOK = "/branding-book";
