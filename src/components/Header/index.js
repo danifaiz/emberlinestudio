@@ -299,6 +299,11 @@ class Header extends Component {
                       </NavLink>
                     </li>
                     <li>
+                      <NavLink to="/branding" className="inver switchMenu">
+                        Branding
+                      </NavLink>
+                    </li>
+                    <li>
                       <NavLink to="/about" className="inver switchMenu">
                         About Us
                       </NavLink>
