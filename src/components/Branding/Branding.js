@@ -40,6 +40,13 @@ export default function Branding({ ...props }) {
     }
   }, []);
 
+  const brandingProjects = useMemo(()=>{
+    return projects.filter(project => {
+      const categories = project.categories.map(category => category.name);
+      return categories.includes('Branding');
+    });
+  },[projects]);
+
   const goToConnectSection = (e) => {
     e.preventDefault();
     if (bookMyCallRef.current) {
@@ -250,7 +257,7 @@ export default function Branding({ ...props }) {
           <div className="row">
             <div className="col-12 text-center">
               <h1>BRANDS WE WORKED WITH</h1>
-              {projects.length && (
+              {brandingProjects?.length && (
                 <OwlCarousel
                   className="owl-theme"
                   loop
@@ -264,7 +271,7 @@ export default function Branding({ ...props }) {
                   smartSpeed="1000"
                   responsive={responsiveOwl}
                 >
-                  {projects.map((project) => (
+                  {brandingProjects?.map((project) => (
                     <div key={project.id} className="item">
                       <Link
                         to={
@@ -356,6 +363,9 @@ export default function Branding({ ...props }) {
             </div>
             <div className="col-12">
               <p className="text-center">Where we will try to discuss:</p>
+              <div className="row">
+              <div className="col-2"></div>
+              <div className="col-10">
               <ul>
                 <li>Current Branding</li>
                 <li>Our Brand Design Process</li>
@@ -368,6 +378,10 @@ export default function Branding({ ...props }) {
                 <li>Marketing Strategies</li>
                 <li>Website Overview </li>
               </ul>
+              </div>
+              
+              </div>
+              
             </div>
             <div className="col-12 text-center">
               <button

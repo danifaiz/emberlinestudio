@@ -99,7 +99,7 @@ export default function CalendlyForm({ ...props }) {
             <div className="col">
               <PopupButton
                 className="btn button-vds book-my-call"
-                url={`https://calendly.com/danifaiz30/emberlinestudios`}
+                url={`https://calendly.com/openingcall/30min`}
                 rootElement={document.getElementById("root")}
                 text="BOOK MY CALL"
                 prefill={{
