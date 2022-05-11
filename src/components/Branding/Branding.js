@@ -79,7 +79,8 @@ export default function Branding({ ...props }) {
     speed: 250, // Speed of the enter/exit transition.
     transition: true,
   };
-
+  /// Desktop: https://res.cloudinary.com/drz9rnpwi/video/upload/v1652272439/emberlines/Desktop_Small_zost26.mp4
+  //// Mobile : https://res.cloudinary.com/drz9rnpwi/video/upload/v1652272649/emberlines/Mobile_Small_yydldp.mp4
   return (
     <div>
       <Header />
@@ -91,7 +92,7 @@ export default function Branding({ ...props }) {
           loop="loop"
         >
           <source
-            src="https://asncars.com/carpics/tempupload/mp4_1283_1.mp4"
+            src="https://res.cloudinary.com/drz9rnpwi/video/upload/v1652272439/emberlines/Desktop_Small_zost26.mp4"
             type="video/mp4"
           />
         </video>
