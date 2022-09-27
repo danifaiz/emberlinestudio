@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import * as PATHS from "../../constants/data_routes";
 import Tilt from "react-tilt";
 import "../../css/hvco-pdf.css";
@@ -298,13 +298,9 @@ export default function Branding({ ...props }) {
                   ))}
                 </OwlCarousel>
               )}
-              <a
-                className="btn button-vds"
-                href="/"
-                onClick={goToConnectSection}
-              >
-                VIEW ALL PROJECTS
-              </a>{" "}
+              <NavLink className="btn button-vds" to="/projects">
+                  VIEW ALL PROJECTS
+              </NavLink>{" "}
             </div>
           </div>
         </div>

@@ -101,7 +101,7 @@ export default function CalendlyForm({ ...props }) {
                 className="btn button-vds book-my-call"
                 url={`https://calendly.com/openingcall/30min`}
                 rootElement={document.getElementById("root")}
-                text="BOOK MY CALL"
+                text="SCHEDULE CALL"
                 prefill={{
                   email: email,
                   name: name,
