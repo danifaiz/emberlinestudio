@@ -105,7 +105,7 @@ export default function Branding({ ...props }) {
                 We help you create an Impactful Brand by telling your story in a
                 way that connects with people.
               </p>
-              <div className="row">
+              <div className="row"  style={{display:'none'}}>
                 <div className="col-6">
                   <div className="w-b">
                     Unlimited <span>Revisions</span>
@@ -119,7 +119,7 @@ export default function Branding({ ...props }) {
               </div>
               <button
                 type="submit"
-                className="btn button-vds"
+                className="btn button-vds consultation-btn"
                 onClick={goToConnectSection}
               >
                 FREE CONSULTATION CALL
@@ -132,33 +132,29 @@ export default function Branding({ ...props }) {
         <div className="container">
           <div className="row">
             <div className="card">
-              <div className="card-header"> Dear Breadwinner </div>
-              <div className="card-body">
+              <div className="card-header"> HOW TO GET STARTED? </div>
+              <div className="card-body long-story-font">
                 <p>We understand.</p>
                 <p>
-                  We know building a successful business is hard and keeping it
-                  up even harder.
+                  We know starting a business is hard, making it successful harder and keeping it up the hardest.
                 </p>
                 <p>
-                  Always worrying about your next customer and fear of losing
-                  current clients.
+                  Always worrying about your next customer and fear of losing existing clients.
                 </p>
                 <p>Wondering how on Earth people have built Giant brands.</p>
                 <p>
-                  Who are these people, where do they come from, what do they
-                  eat?!
+                  Who are these people, where do they come from, what do they eat?!
                 </p>
                 <p>
                   Probably waking up and praying in the middle of the night.{" "}
                 </p>
+
                 <p>
-                  How can I end this 9-5 and start my own thing but then your
-                  baby kicks you in the tummy reminding that milk and diapers
-                  are worth gold these days.
+                  How can I scale up my business, make it more predictable, take less risks, earn more and have fun more.
                 </p>
+                <p>OR worse; How can I end this 9-5 and start my own thing but then your baby kicks you in the tummy reminding that milk and diapers are worth gold these days.</p>
                 <p>
-                  Yesterday, a friend told you to post daily on social media and
-                  today a blog post told you to run ads.
+                  Yesterday, a friend told you to post daily on Insta, be superactive on Messenger and today a blog post told you to run ads.
                 </p>
                 <p>
                   Sending you into a vicious circle of the fast and ever
@@ -187,7 +183,7 @@ export default function Branding({ ...props }) {
                   from.
                 </p>
                 <p>
-                  <strong>THIS IS WHAT TURNS HAIR GRAY.</strong>
+                  <strong>THIS TURNS HAIR GRAY.</strong>
                 </p>
                 <p>
                   We have gone through exactly what you just read so we know the
@@ -197,9 +193,7 @@ export default function Branding({ ...props }) {
                   <strong>BUT THIS IS REALLY ABOUT YOU.</strong>
                 </p>
                 <p>
-                  You know this feel because you might be going through this
-                  right now, have gone through this or are comfortable but need
-                  a little more security.
+                  We are here to tell your story to the people through your Identity so running your business becomes more fun, more controlled and a lot easier.
                 </p>
               </div>
             </div>
@@ -212,7 +206,7 @@ export default function Branding({ ...props }) {
             <div className="col-12 text-center">
               <p>So here’s the deal</p>
               <h2>
-                WE WILL CREATE
+                YOU WILL GET
                 <br />
                 AN IMPACTFUL
                 <br />
@@ -222,16 +216,16 @@ export default function Branding({ ...props }) {
             </div>
             <div className="col-md-4">
               <div className="deal-sec-card">
-                100% PAYMENT
+                VISION
                 <br />
-                AFTER WORK
+                BUILDING
               </div>
             </div>
             <div className="col-md-4">
               <div className="deal-sec-card">
-                UNLIMITED
+                100%
                 <br />
-                REVISIONS
+                SATISFACTION
               </div>
             </div>
             <div className="col-md-4">
@@ -247,7 +241,7 @@ export default function Branding({ ...props }) {
                 className="btn button-vds"
                 onClick={goToConnectSection}
               >
-                GET ME ON CALL
+                SCHEDULE MY CALL
               </button>
             </div>
           </div>
@@ -309,13 +303,13 @@ export default function Branding({ ...props }) {
                 href="/"
                 onClick={goToConnectSection}
               >
-                BOOK MY CALL
+                VIEW ALL PROJECTS
               </a>{" "}
             </div>
           </div>
         </div>
       </div>
-      <div className="branding-sec pt-0">
+      <div className="branding-sec pt-0" style={{display:'none'}}>
         <div className="container d-flex">
           <div className="row">
             <div className="col-md-6 m-auto">
@@ -390,7 +384,7 @@ export default function Branding({ ...props }) {
                 className="btn button-vds"
                 onClick={goToConnectSection}
               >
-                GET ME ON CALL
+                FREE CONSULTATION CALL
               </button>
             </div>
           </div>

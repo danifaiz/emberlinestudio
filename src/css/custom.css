@@ -2,3 +2,12 @@
 #contactBtn {
     outline:none;
 }
+
+.consultation-btn {
+    position:relative;
+    top:30px;
+}
+
+.long-story-font {
+    font-family: 'Poppins', sans-serif;
+}
