@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import loadjs from 'loadjs'
-import $ from 'jquery'
-import {withRouter} from 'react-router-dom';
 import axios from 'axios';
 import * as PATHS from '../../constants/data_routes'
+import Header from '../Header';
 export default class ProjectDetail extends Component {
     constructor(props) {
         super(props);
@@ -59,6 +57,7 @@ export default class ProjectDetail extends Component {
         );
        return (
             <div>
+                <Header />
                 <div className="ES-section about subpage">
                     <div className="container">
                         <div className="row">
