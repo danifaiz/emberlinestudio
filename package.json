@@ -6,7 +6,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "aos": "^2.3.4",
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "bootstrap": "^4.4.0",
     "detect-it": "^3.0.5",
     "isotope-layout": "^3.0.6",
